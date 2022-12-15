@@ -1,0 +1,151 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CDN URL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"                        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"                              integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+
+  <title>Main WEB</title>
+</head>
+<body>
+
+        <!-- Navbar 영역 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white container my-3">
+        <div class="container">
+    
+            <!-- Logo 영역 -->
+            <a class="mb-2 navbar-brand" href="{% url 'bingo:bingo' %}"><img src="{% static "/bingo/bingo/images/logo.png" %}" width="70" height="40" alt=""><strong> NAME</strong></a>
+        
+            <!-- 햄버거 메뉴 영역 (data-target : Menu ID) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Navbar Content 영역 -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="me-2">
+                        <a class="nav-link" href="{% url 'bingo:detail1' %}">
+                        game1</a>
+                    </li>
+                    <li class="me-2">
+                        <a class="nav-link" href="{% url 'bingo:detail2' %}">
+                        game2</a>
+                    </li>
+                    <li class="me-2">
+                        <a class="nav-link" href="{% url 'bingo:detail3' %}">
+                        game3</a>
+                    </li>
+                    <li class="me-2">
+                        <a class="nav-link" href="{% url 'bingo:detail4' %}">
+                        game4</a>
+                    </li>
+                    <li class="me-2">
+                        <a class="nav-link" href="{% url 'Board:list' %}">
+                        board</a>
+                    </li>
+                    <li class="me-2">
+                        <a class="nav-link" href="{% url 'common:login' %}">
+                        로그인</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="{% url 'common:signup' %}">
+                        회원가입</a>
+                    </li>
+
+                </ul>
+            </div>
+    
+        </div>
+    </nav>
+
+
+    <p class="placeholder-wave">
+        <span class="placeholder col-12 bg-secondary"></span>
+    </p>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static "/bingo/bingo/images/picture1.jfif"%}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static "/bingo/bingo/images/picture2.jpg"%}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static "/bingo/bingo/images/picture3.jpg"%}" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br><br><br>
+    <h2><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALL GAEMS </strong></h2>
+    <span class="placeholder col-12 bg-dark"></span>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" >
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Game title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" >
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Game title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Game title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>    <br><br>
+
+
+    
+</body>
+
+
+</html>
