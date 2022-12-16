@@ -1,55 +1,73 @@
 {% load static %}
-<!-- Navbar 영역 -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white container my-3">
-  <div class="container">
-    <!-- Logo 영역 -->
-    <a class="mb-2 navbar-brand" href="/"><img src="{% static "bingo/bingo/images/logo.png" %}" width="70" height="40" alt=""> Name</a>
+<section data-bs-version="5.1" class="menu cid-tq6HRmehEl" once="menu" id="menu1-1q">
+    
+  <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+          <div class="navbar-brand">
+              <span class="navbar-logo">
+                  
+                      <a href="Home.html"><img src="{%static "assets/images/logo-100x100.png"%}" alt="" style="height: 3.8rem;"></a>
+                  
+              </span>
+              <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-5" href="{% url 'bingo:bingo' %}">DINGO BING</a></span>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                <li class="nav-item dropdown">
+                  <a class="nav-link link text-black text-primary dropdown-toggle " href="#" target="_blank" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 16px;">Platform</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown-875">
+                    <a class="text-black text-primary dropdown-item " href="#">PC</a>
+                    <a class="text-black text-primary show dropdown-item " href="#">Mobile</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link text-black text-primary dropdown-toggle " href="#" target="_blank" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 16px;">Genres</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown-215">
+                    <a class="text-black text-primary show dropdown-item " href="#">Simulation</a>
+                    <a class="text-black text-primary dropdown-item " href="#">FPS</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link text-black text-primary dropdown-toggle " href="#" target="_blank" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 16px;">Community</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown-992">
+                    <a class="text-black text-primary show dropdown-item " href="#">TEAM</a>
+                    <a class="text-black text-primary show dropdown-item " href="#">CONTACTS</a>
+                    <a class="text-black text-primary show dropdown-item " href="#">FAQ</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link text-black text-primary show " href="#" style="font-size: 16px;">게시판</a>
+                </li>
+                {% if user.is_anonymous %}
+                <li class="nav-item">
+                  <a class="nav-link link text-black text-primary show " href="{% url 'common:login' %}" style="font-size: 16px;">로그인</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link text-black text-primary show " href="{% url 'common:signup' %}" style="font-size: 16px;">회원가입</a>
+                </li>
+                {% else %} 
+                <li class="nav-item">
+                  <a class="nav-link link text-black text-primary show " href="{% url 'Board:board_create' %}" style="font-size: 16px;">게시판작성</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link text-black text-primary show " href="{% url 'common:logout' %}" style="font-size: 16px;" >로그아웃 [ {{user.username}} ]</a>
+                </li>
+                {% endif %}
+                
+              </ul>
+              
+              
+          </div>
+      </div>
+  </nav>
+</section>
 
-    <!-- 햄버거 메뉴 영역 (data-target : Menu ID) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <!-- Navbar Content 영역 -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="me-2">
-          <a class="nav-link" href="{% url 'bingo:detail1' %}">
-            bingo1</a>
-        </li>
-  	    <li class="me-2">
-          <a class="nav-link" href="{% url 'bingo:detail2' %}">
-            bingo2</a>
-        </li>
-	      <li class="me-2">
-          <a class="nav-link" href="{% url 'bingo:detail3' %}">
-            bingo3</a>
-        </li>
-	      <li class="me-2">
-          <a class="nav-link" href="{% url 'Board:list' %}">
-            board</a>
-        </li>
-        {% if user.is_anonymous %}
-        <li class="me-2">
-          <a class="nav-link" href="{% url 'common:login' %}">
-            <i class="fa-solid fa-user me-2"></i>로그인</a>
-        </li>
-        <li>
-          <a class="nav-link" href="{% url 'common:signup' %}">
-            <i class="fa-solid fa-user-plus me-2"></i>회원가입</a>
-        </li>
-        {% else %}  
-        <li class="me-2">
-        <a class="nav-link" href="{% url 'Board:board_create' %}">
-          <i class="me-2 fa-solid fa-pencil"></i>Board Write</a>
-        </li>
-        <li class="me-2">
-          <a class="nav-link" href="{% url 'common:logout' %}">
-            <i class="fa-solid fa-right-from-bracket me-2"></i>로그아웃 [ {{user.username}} ]</a>
-        </li>
-        {% endif %}
-      </ul>
-    </div>
-
-  </div>
-</nav>
