@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+#!d:\please\myhome\scripts\python.exe
+=======
 #!d:\project\myhome\scripts\python.exe
+>>>>>>> 6670516bf764de42bbed733f9b61fb6c24bad938
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
