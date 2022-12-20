@@ -1,0 +1,493 @@
+@charset "UTF-8";
+/* CSS Document */
+@media all and (min-width: 760px) {
+
+}
+@media all and (min-width: 760px) and (max-width: 979px) {
+
+}
+@media screen and (max-width: 759px) {
+
+}
+/* ==================================================
+golf
+================================================== */
+/* game-top-hero */
+@media all and (min-width: 760px) {
+  .game-top-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: url(../img/game/golf/bg_hero.png) no-repeat center top;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 100%;
+  }
+  .game-top-hero__model{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: calc(60 / 16 * 1em);
+    margin-left: calc(-50 / 16 * 1em);
+    z-index: 0;
+    display: block;
+    background: url(../img/game/golf/bg_hero_model.png) no-repeat center top;
+    /*background: url(../img/game/golf/img_point01_chara.png) no-repeat center top;*/
+    background-size: contain;
+    width: calc(973 / 16 * 1em);
+    height: calc(1479 / 16 * 1em);
+  }
+  .game-top-hero-body__inner {
+    padding-top: calc(40 / 16 * 1em);
+  }
+  .game-section-head__info {
+    display: block;
+    width: calc(360 / 16 * 1em);
+    margin: 0 auto calc(20 / 16 * 1em);
+    padding: calc(14 / 16 * 1em) calc(40 / 16 * 1em);
+    background: linear-gradient(80deg, rgba(0,115,215,1) 0%, rgba(0,225,200,1) 100%);
+    border-radius: calc(25 / 16 * 1em);
+  }
+  .game-section-head__info img {
+    display: block;
+  }
+
+  .game-section-head__ico{
+    width: calc(120 / 16 * 1em);
+    margin-bottom: calc(16 / 16 * 1em);
+  }
+  .game-section-head__ico > svg {
+    display: block;
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-top-hero::before{
+    background-size: calc(2560 / 1200 * 100vw) auto;
+  }
+  .game-top-hero__model{
+    margin-top: calc(60 / 1600 * 100vw);
+    margin-left: calc(-50 / 1600 * 100vw);
+    width: calc(973 / 1600 * 100vw);
+    height: calc(1479 / 1600 * 100vw);
+  }
+  .game-top-hero-body__inner {
+    padding-top: calc(40 / 1600 * 100vw);
+  }
+  .game-section-head__info {
+    width: calc(360 / 1600 * 100vw);
+    margin-bottom: calc(20 / 1600 * 100vw);
+    padding: calc(14 / 1600 * 100vw) calc(40 / 1600 * 100vw);
+    border-radius: calc(25 / 1600 * 100vw);
+  }
+  .game-section-head__ico{
+    width: calc(120 / 1600 * 100vw);
+  }
+}
+@media screen and (max-width: 759px) {
+  .game-top-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: url(../img/game/golf/bg_hero_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) auto;
+    width: 100%;
+    height: 100%;
+  }
+  .game-top-hero__model::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 33.33333%;
+    margin-top: calc(100 / 32 * 1em);
+    margin-left: calc(10 / 32 * 1em);
+    z-index: 0;
+    display: block;
+    background: url(../img/game/golf/img_point01_chara.png) no-repeat center top;
+    background-size: contain;
+    width: calc(715 / 32 * 1em);
+    height: calc(1127 / 32 * 1em);
+  }
+  .game-top-hero-body__inner {
+    padding-top: calc(22 / 32 * 1em);
+  }
+  .game-section-head__info {
+    display: block;
+    width: calc(540 / 32 * 1em);
+    margin: 0 auto calc(54 / 32 * 1em);
+    padding: calc(22 / 32 * 1em) calc(44 / 32 * 1em);
+    background: linear-gradient(80deg, rgba(0,115,215,1) 0%, rgba(0,225,200,1) 100%);
+    border-radius: calc(38 / 32 * 1em);
+  }
+  .game-section-head__info img {
+    display: block;
+    margin: auto;
+  }
+  .game-section-head__ico{
+    width: calc(160 / 32 * 1em);
+  }
+  .game-section-head-sub__label {
+    width: calc(71 / 32 * 1em);
+  }
+  .game-top-hero-body::before {
+    background: url(../img/game/golf/bg_content_frame_top_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+    /*top: calc(-102 / 32 * 1em);*/
+    top: calc(-100 / 32 * 1em);
+  }
+  .game-top-hero-body::after {
+    background: url(../img/game/golf/bg_content_frame_bottom_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+}
+
+/* game-play-video */
+@media all and (min-width: 760px) {
+  .game-play-video-img__label {
+    border-bottom-left-radius: calc(18 / 1600 * 100vw);
+    border-bottom-right-radius: calc(18 / 1600 * 100vw);
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-play-video-body::before {
+    bottom: calc(-12 / 1600 * 100vw);
+  }
+}
+@media screen and (max-width: 759px) {
+  .game-play-video-img__label {
+    border-bottom-left-radius: calc(18 / 32 * 1em);
+    border-bottom-right-radius: calc(18 / 32 * 1em);
+  }
+}
+
+/* game-main */
+@media screen and (min-width: 760px) {
+  .game-main::before{
+    content: "";
+    position: absolute;
+    top: calc(-400 / 16 * 1em);
+    display: block;
+    background: url(../img/game/golf/bg_content_frame.png) no-repeat center top;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: calc(1240 / 2560 * 100%);
+  }
+  .game-main__inner {
+    padding-top:  calc(150 / 16 * 1em);
+  }
+}
+
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-main::before{
+    top: calc(-400 / 1600 * 100vw);
+    background-size: calc(2560 / 1600 * 100vw) auto;
+  }
+  .game-main__inner {
+    padding-top:  calc(150 / 1600 * 100vw);
+  }
+}
+
+/* game-point */
+@media screen and (min-width: 760px) {
+  /* point01 */
+  .-point01.game-point {
+    justify-content: flex-start;
+  }
+  .-point01 .game-point-movie {
+    margin-left: calc(-150 / 16 * 1em);
+  }
+  .-point01 .game-point-content {
+    /*right: 0;*/
+    right: 15%;
+  }
+  .-point01 .game-point-content-head {
+    /*width:  calc(524 / 16 * 1em);*/
+    width:  calc(200 / 16 * 1em);
+    margin-top: calc(63 / 16 * 1em);
+  }
+  .-point01 .game-point-content::before {
+    content: "";
+    position: absolute;
+    top: calc(70 / 16 * 1em);
+    /*right: calc(-220 / 16 * 1em);*/
+    right: calc(-400 / 16 * 1em);
+    display: block;
+    background: url(../img/game/golf/img_point01_chara.png) no-repeat center top;
+    background-size: 100% auto;
+    width: calc(450 / 16 * 1em);
+    height: calc(558 / 16 * 1em);
+    z-index: 1;
+  }
+
+  /* point02 */
+  .game-main-section:nth-of-type(2) {
+    margin-top: calc(100 / 16 * 1em);
+  }
+  .-point02.game-point {
+    justify-content: flex-end;
+  }
+  .-point02 .game-point-movie {
+    margin-right: calc(-150 / 16 * 1em);
+  }
+  .-point02 .game-point-content {
+    left: 0;
+    z-index: 1;
+  }
+  .-point02 .game-point-img {
+    width:  calc(1111 / 16 * 1em);
+    margin-right: calc(-385 / 16 * 1em);
+  }
+  .-point02 .game-point-content-head {
+    width:  calc(540 / 16 * 1em);
+    margin-top: calc(70 / 16 * 1em);
+  }
+
+  /* point03 */
+  .game-main-section:nth-of-type(3) {
+    margin-top: calc(100 / 16 * 1em);
+    margin-bottom: calc(100 / 16 * 1em);
+  }
+  .-point03.game-point {
+    justify-content: flex-start;
+  }
+  .-point03 .game-point-content {
+    right: 0;
+    width: 45%;
+  }
+  .-point03 .game-point-img {
+    width:  calc(1111 / 16 * 1em);
+    margin-left: calc(-383 / 16 * 1em);
+  }
+  .-point03 .game-point-content-head {
+    margin-top: calc(49 / 16 * 1em);
+    width:  calc(629 / 16 * 1em);
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  /* point01 */
+  .-point01 .game-point-movie {
+    position: relative;
+    margin-left: calc(-150 / 1600 * 100vw);
+  }
+  .-point01 .game-point-content-head {
+    /*width:  calc(524 / 1600 * 100vw);*/
+    width:  calc(200 / 1600 * 100vw);
+    margin-top: calc(62 / 1600 * 100vw);
+  }
+  .-point01 .game-point-content::before {
+    top: calc(55 / 1600 * 100vw);
+    /*right: calc(-220 / 1600 * 100vw);*/
+    right: calc(-330 / 1600 * 100vw);
+    width: calc(450 / 1600 * 100vw);
+    height: calc(558 / 1600 * 100vw);
+  }
+  /* point02 */
+  .game-main-section:nth-of-type(2) {
+    margin-top: calc(70 / 1600 * 100vw);
+  }
+  .-point02 .game-point-movie {
+    margin-right: calc(-150 / 1600 * 100vw);
+  }
+  .-point02 .game-point-content-head {
+    width:  calc(540 / 1600 * 100vw);
+    margin-top: calc(70 / 1600 * 100vw);
+  }
+  .-point02 .game-point-content::before {
+    top: calc(100 / 1600 * 100vw);
+    left: calc(210 / 1600 * 100vw);
+    width: calc(511 / 1600 * 100vw);
+    height: calc(514 / 1600 * 100vw);
+  }
+  /* point03 */
+  .game-main-section:nth-of-type(3) {
+    margin-top: calc(60 / 1600 * 100vw);
+    margin-bottom: calc(60 / 1600 * 100vw);
+  }
+  .-point03 .game-point-img {
+    width:  calc(1111 / 1600 * 100vw);
+    margin-left: calc(-383 / 1600 * 100vw);
+
+  }
+  .-point03 .game-point-content-head {
+    margin-top: calc(49 / 1600 * 100vw);
+    width:  calc(629 / 1600 * 100vw);
+  }
+}
+@media all and (max-width: 759px) {
+  /* point01 */
+  .-point01 .game-point-content-head {
+    /*width:  calc(670 / 32 * 1em);*/
+    width:  calc(200 / 32 * 1em);
+  }
+  .-point01 .game-point-content::before {
+    content: "";
+    position: absolute;
+    bottom: calc(-100 / 32 * 1em);
+    right: calc(-70 / 32 * 1em);
+    display: block;
+    background: url(../img/game/golf/img_point01_chara.png) no-repeat center top;
+    background-size: 100% auto;
+    width: calc(380 / 32 * 1em);
+    height: calc(473 / 32 * 1em);
+    z-index: 1;
+  }
+
+  /* point02 */
+  .game-main-section:nth-of-type(2) {
+    margin-top: calc(120 / 32 * 1em);
+  }
+  .-point02 .game-point-content-head {
+    width:  calc(516 / 32 * 1em);
+  }
+  .-point02 .game-point-img::before {
+    content: "";
+    position: absolute;
+    top: calc(85 / 32 * 1em);
+    left: calc(-135 / 32 * 1em);
+    display: block;
+    background: url(../img/game/golf/img_point02_chara.html) no-repeat center top;
+    background-size: 100% auto;
+    width: calc(488 / 32 * 1em);
+    height: calc(490 / 32 * 1em);
+    z-index: 1;
+  }
+
+  /* point03 */
+  .game-main-section:nth-child(3){
+    margin-top: calc(100 / 32 * 1em);
+  }
+  .-point03 .game-point-content-head {
+    width:  calc(658 / 32 * 1em);
+  }
+}
+
+
+/* playstyle */
+@media all and (min-width: 760px) {
+  .game-playstyle{
+    position: relative;
+    margin-top: calc(15 / 16 * 1em);
+    padding-bottom: calc(80 / 16 * 1em);
+  }
+  .game-playstyle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background: url(../img/game/golf/bg_bottom.png) no-repeat center bottom;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: calc(280 / 2560 * 100%);
+    z-index: -1;
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-playstyle{
+    margin-top: calc(15 / 1600 * 100vw);
+    padding-bottom: calc(80 / 1600 * 100vw);
+  }
+  .game-playstyle::after{
+    background-size: calc(2560 / 1600 * 100vw) auto;
+  }
+}
+@media all and (max-width: 759px) {
+  .game-playstyle{
+    margin-top: calc(80 / 32 * 1em);
+    padding-bottom: calc(80 / 32 * 1em);
+  }
+  .game-playstyle::before{
+    background: url(../img/game/golf/bg_bottom_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+}
+
+/* joycon */
+@media all and (min-width: 760px) {
+  .game-joycon-img-list{
+    align-items: center;
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-joycon-detail__inner{
+    width: calc(460 / 1600 * 100vw);
+  }
+}
+@media all and (max-width: 759px) {
+  .game-joycon-img-list{
+    align-items: center;
+  }
+}
+
+/* game-point-movie */
+@media all and (min-width: 760px) {
+  .game-point-movie {
+    position: relative;
+    width: calc(900 / 16 * 1em);
+  }
+  .game-point-movie::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: calc(-40 / 16 * 1em);
+  }
+  .-point01 .game-point-movie::after {
+    left: calc(-160 / 16 * 1em);
+    background: url(../img/game/golf/img_point01_line.png) no-repeat center center;
+    background-size: contain;
+    width: calc(767 / 16 * 1em);
+    height: calc(28 / 16 * 1em);
+  }
+  .-point02 .game-point-movie::after {
+    right: calc(-160 / 16 * 1em);
+    background: url(../img/game/golf/img_point02_line.png) no-repeat center center;
+    background-size: contain;
+    width: calc(611 / 16 * 1em);
+    height: calc(28 / 16 * 1em);
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-point-movie {
+    width: calc(900 / 1600 * 100vw);
+  }
+  .-point01 .game-point-movie::after {
+    bottom: calc(-40 / 1600 * 100vw);
+    left: calc(-160 / 1600 * 100vw);
+    width: calc(767 / 1600 * 100vw);
+    height: calc(28 / 1600 * 100vw);
+  }
+  .-point02 .game-point-movie::after {
+    bottom: calc(-40 / 1600 * 100vw);
+    right: calc(-160 / 1600 * 100vw);
+    width: calc(611 / 1600 * 100vw);
+    height: calc(28 / 1600 * 100vw);
+  }
+}
+@media all and (max-width: 759px) {
+  .game-point-movie::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  .-point01 .game-point-movie::after {
+    background: url(../img/game/golf/img_point01_line.png) no-repeat center center;
+    background-size: contain;
+    bottom: calc(-40 / 32 * 1em);
+    left: calc(-490 / 32 * 1em);
+    width: calc(767 / 32 * 1em);
+    height: calc(28 / 32 * 1em);
+  }
+  .-point02 .game-point-movie::after {
+    background: url(../img/game/golf/img_point02_line_sp.png) no-repeat center center;
+    background-size: contain;
+    bottom: calc(-40 / 32 * 1em);
+    right: calc(-270 / 32 * 1em);
+    width: calc(598 / 32 * 1em);
+    height: calc(27 / 32 * 1em);
+  }
+}

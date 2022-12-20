@@ -1,0 +1,637 @@
+@charset "UTF-8";
+/* CSS Document */
+@media all and (min-width: 760px) {
+
+}
+@media all and (min-width: 760px) and (max-width: 979px) {
+
+}
+@media screen and (max-width: 759px) {
+
+}
+/* ==================================================
+Chambara
+================================================== */
+/* game-top-hero */
+@media all and (min-width: 760px) {
+  .game-top-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: url(../img/game/chambara/bg_hero.png) no-repeat center top;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 100%;
+  }
+  .game-top-hero__model{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: calc(-280 / 16 * 1em);
+    z-index: 0;
+    display: block;
+    background: url(../img/game/chambara/bg_hero_model.png) no-repeat center top;
+    background-size: contain;
+    width: calc(1293 / 16 * 1em);
+    height: calc(1162 / 16 * 1em);
+  }
+  .game-section-head__ico{
+    width: calc(103 / 16 * 1em);
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-top-hero::before{
+    background-size: calc(2560 / 1600 * 100vw) auto;
+  }
+  .game-top-hero__model{
+    margin-left: calc(-280 / 1600 * 100vw);
+    width: calc(1293 / 1600 * 100vw);
+    height: calc(1162 / 1600 * 100vw);
+  }
+  .game-section-head__ico{
+    width: calc(103 / 1600 * 100vw);
+  }
+}
+@media screen and (max-width: 759px) {
+  .game-top-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: url(../img/game/chambara/bg_hero_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) auto;
+    width: 100%;
+    height: 100%;
+  }
+  .game-top-hero__model::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 33.33333%;
+    margin-bottom: calc(70 / 32 * 1em);
+    margin-left: calc(-120 / 32 * 1em);
+    z-index: 0;
+    display: block;
+    background: url(../img/game/chambara/bg_hero_model.png) no-repeat center top;
+    background-size: contain;
+    width: calc(965 / 32 * 1em);
+    height: calc(873 / 32 * 1em);
+  }
+  .game-section-head__ico{
+    width: calc(143 / 32 * 1em);
+  }
+  .game-section-head-sub__label {
+    width: calc(151 / 32 * 1em);
+  }
+  .game-top-hero-body::before {
+    background: url(../img/game/chambara/bg_content_frame_top_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+  .game-top-hero-body::after {
+    background: url(../img/game/chambara/bg_content_frame_bottom_sp.html) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+}
+
+/* game-main */
+@media screen and (min-width: 760px) {
+  .game-main::before{
+    content: "";
+    position: absolute;
+    /*top: calc(-405 / 16 * 1em);*/
+    top: calc(-190 / 16 * 1em);
+    display: block;
+    /*background: url(../img/game/chambara/bg_content_frame.png) no-repeat center top;*/
+    background: url(../img/game/chambara/bg_content_frame.png) no-repeat center -215px;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: calc(1240 / 2560 * 100%);
+  }
+  .game-main__inner {
+    padding-top:  calc(180 / 16 * 1em);
+  }
+}
+
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-main::before{
+    /*top: calc(-405 / 1600 * 100vw);*/
+    top: calc(-190 / 16 * 1em);
+    background-size: calc(2560 / 1600 * 100vw) auto;
+  }
+  .game-main__inner {
+    padding-top:  calc(180 / 1600 * 100vw);
+  }
+}
+
+/* game-point */
+@media screen and (min-width: 760px) {
+  /* point01 */
+  .-point01.game-point {
+    justify-content: flex-start;
+  }
+  .-point01 .game-point-movie {
+    margin-left: calc(-230 / 16 * 1em);
+  }
+  .-point01 .game-point-content-head {
+    width:  calc(551 / 16 * 1em);
+  }
+  .-point01 .game-point-content {
+    right: 0;
+  }
+  .-point01 .game-point-content::before {
+    content: "";
+    position: absolute;
+    content: "";
+    position: absolute;
+    top: calc(310 / 16 * 1em);
+    right: calc(140 / 16 * 1em);
+    display: block;
+    background: url(../img/game/chambara/img_point01_chara.png) no-repeat center top;
+    background-size: 100% auto;
+    width: calc(642 / 16 * 1em);
+    height: calc(391 / 16 * 1em);
+    z-index: 1;
+  }
+
+  /* feature */
+  .game-main-section.-feature{
+    margin-top: calc(100 / 16 * 1em);
+    padding-top: calc(80 / 16 * 1em);
+    z-index: 0;
+  }
+  .game-main-section.-feature::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/game/chambara/bg_point02.jpg) no-repeat center top;
+    background-size: calc(2560 / 16 * 1em) auto;
+    padding-top: calc(2100 / 2560 * 100%);
+    z-index: -1;
+  }
+  .-feature .game-main-section__inner{
+    padding-bottom: calc(100 / 16 * 1em);
+  }
+  .-feature .game-point {
+    justify-content: flex-end;
+  }
+  .-feature .game-point-content {
+    position: relative;
+  }
+  .-feature .game-point-img {
+    width:  calc(1111 / 16 * 1em);
+    margin-right: calc(-385 / 16 * 1em);
+  }
+  .-feature .game-point-content-head {
+    width:  calc(641 / 16 * 1em);
+  }
+  .-feature .game-point-content::before {
+    content: "";
+    position: absolute;
+    top: calc(350 / 16 * 1em);
+    left: calc(0 / 16 * 1em);
+    display: block;
+    background: url(../img/game/chambara/img_point02_chara.png) no-repeat center top;
+    background-size: 100% auto;
+    width: calc(568 / 16 * 1em);
+    height: calc(489 / 16 * 1em);
+  }
+
+  /* game-point-feature */
+  .game-point-list{
+    position: relative;
+    margin-top: calc(50 / 16 * 1em);
+  }
+  .game-point-list::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: calc(-45 / 16 * 1em);
+    right: calc(-380 / 16 * 1em);
+    background: url(../img/game/chambara/img_point02_line.png) no-repeat center center;
+    background-size: contain;
+    width: calc(611 / 16 * 1em);
+    height: calc(28 / 16 * 1em);
+  }
+  .game-point-list__item + .game-point-list__item {
+    margin-top: calc(45 / 16 * 1em);
+  }
+  .game-point-feature {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .game-point-feature::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: calc(-220/ 16 * 1em);
+    z-index: -1;
+    transform: translateY(-50%);
+    width: calc(1103 / 16 * 1em);
+    height: calc(201 / 16 * 1em);
+    background: url(../img/game/chambara/bg_point02_list.png) no-repeat center center;
+    background-size: contain;
+  }
+  .game-point-feature-head__label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(325 / 16 * 1em);
+    height: calc(45 / 16 * 1em);
+    background: url(../img/game/chambara/bg_point02_txt.svg) no-repeat center center;
+    background-size: contain;
+    padding-left: calc(30 / 16 * 1em);
+    padding-right: calc(70 / 16 * 1em);
+  }
+  .game-point-feature-head__label > span{
+    display: inline-block;
+    vertical-align: top;
+    font-size: calc(25 / 16 * 1em);
+    color: #fff;
+    font-weight: 900;
+  }
+  .game-point-feature-head__txt{
+    font-size: calc(18 / 16 * 1em);
+    margin-top: calc(20 / 18 * 1em);
+    padding-left: calc(25 / 18 * 1em);
+  }
+  .game-point-feature-img{
+    width: calc(372 / 16 * 1em);
+    margin-top: calc(-34 / 16 * 1em);
+    margin-left: calc(18 / 16 * 1em);
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  /* point01 */
+  .-point01 .game-point-movie {
+    position: relative;
+    margin-left: calc(-230 / 1600 * 100vw);
+  }
+  .-point01 .game-point-content-head {
+    width:  calc(551 / 1600 * 100vw);
+  }
+  .-point01 .game-point-content::before {
+    top: calc(310 / 1600 * 100vw);
+    right: calc(140 / 1600 * 100vw);
+    width: calc(642 / 1600 * 100vw);
+    height: calc(391 / 1600 * 100vw);
+  }
+
+  /* feature */
+  .game-main-section.-feature{
+    margin-top: calc(100 / 1600 * 100vw);
+    padding-top: calc(80 / 1600 * 100vw);
+  }
+  .game-main-section.-feature::before{
+    background-size: calc(2560 / 1600 * 100vw) auto;
+  }
+  .-feature .game-main-section__inner{
+    padding-bottom: calc(100 / 1600 * 100vw);
+  }
+  .-feature .game-point-img {
+    width:  calc(1111 / 1600 * 100vw);
+    margin-right: calc(-385 / 1600 * 100vw);
+  }
+  .-feature .game-point-content-head {
+    width:  calc(641 / 1600 * 100vw);
+  }
+  .-feature .game-point-content::before {
+    top: calc(350 / 1600 * 100vw);
+    left: calc(0 / 1600 * 100vw);
+    width: calc(568 / 1600 * 100vw);
+    height: calc(489 / 1600 * 100vw);
+  }
+
+  /* game-point-feature */
+  .game-point-list{
+    margin-top: calc(50 / 1600 * 100vw);
+  }
+  .game-point-list::after {
+    bottom: calc(-45 / 1600 * 100vw);
+    right: calc(-380 / 1600 * 100vw);
+    width: calc(611 / 1600 * 100vw);
+    height: calc(28 / 1600 * 100vw);
+  }
+  .game-point-list__item + .game-point-list__item {
+    margin-top: calc(45 / 1600 * 100vw);
+  }
+  .game-point-feature::before {
+    right: calc(-220/ 1600 * 100vw);
+    width: calc(1103 / 1600 * 100vw);
+    height: calc(201 / 1600 * 100vw);
+  }
+  .game-point-feature-head__label{
+    width: calc(325 / 1600 * 100vw);
+    height: calc(45 / 1600 * 100vw);
+    padding-left: calc(30 / 1600 * 100vw);
+    padding-right: calc(70 / 1600 * 100vw);
+  }
+  .game-point-feature-head__label > span{
+    font-size: calc(25 / 1600 * 100vw);
+  }
+  .game-point-feature-head__txt{
+    font-size: calc(18 / 1600 * 100vw);
+    margin-top: calc(20 / 1600 * 100vw);
+    padding-left: calc(25 / 1600 * 100vw);
+  }
+  .game-point-feature-img{
+    width: calc(372 / 1600 * 100vw);
+    margin-top: calc(-34 / 1600 * 100vw);
+    margin-left: calc(18 / 1600 * 100vw);
+  }
+}
+@media screen and (max-width: 759px) {
+  /* point01 */
+  .-point01.game-point {
+    justify-content: flex-start;
+  }
+  .-point01 .game-point-movie {
+  }
+  .-point01 .game-point-content-head {
+    width:  calc(526 / 32 * 1em);
+  }
+  .-point01 .game-point-content {
+    right: 0;
+  }
+  .-point01 .game-point-content::before {
+    content: "";
+    position: absolute;
+    top: calc(700 / 32 * 1em);
+    left: calc(-30 / 32 * 1em);
+    display: block;
+    background: url(../img/game/chambara/img_point01_chara_sp.png) no-repeat center top;
+    background-size: contain;
+    width: calc(1092 / 32 * 1em);
+    height: calc(536 / 32 * 1em);
+    z-index: 1;
+  }
+
+  /* feature */
+  .game-main-section.-feature{
+    position: relative;
+    margin-top: calc(400 / 32 * 1em);
+    padding-top: calc(120 / 32 * 1em);
+    z-index: 0;
+  }
+  .game-main-section.-feature::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/game/chambara/bg_point02_sp.jpg) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) auto;
+    padding-top: calc(2096 / 750 * 100%) !important;
+    z-index: -1;
+  }
+  .-feature .game-point {
+    justify-content: flex-end;
+  }
+  .-feature .game-point-content {
+    position: relative;
+  }
+  .-feature .game-point-img {
+    width:  calc(1111 / 32 * 1em);
+    margin-right: calc(-385 / 32 * 1em);
+  }
+  .-feature .game-point-content-head {
+    width:  calc(474 / 32 * 1em);
+  }
+  .-feature .game-point-list::before {
+    content: "";
+    position: absolute;
+    bottom: calc(-440 / 32 * 1em);
+    left: calc(-20 / 32 * 1em);
+    display: block;
+    background: url(../img/game/chambara/img_point02_chara.png) no-repeat center top;
+    background-size: 100% auto;
+    width: calc(592 / 32 * 1em);
+    height: calc(510 / 32 * 1em);
+    z-index: 1;
+  }
+
+  /* game-point-feature */
+  .game-point-list{
+    order: 2;
+    position: relative;
+  }
+  .game-point-list::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: calc(-30 / 32 * 1em);
+    right: calc(-160 / 32 * 1em);
+    background: url(../img/game/chambara/img_point02_line_sp.png) no-repeat center center;
+    background-size: contain;
+    width: calc(598 / 32 * 1em);
+    height: calc(28 / 32 * 1em);
+  }
+  .game-point-list__item + .game-point-list__item {
+    margin-top: calc(10 / 32 * 1em);
+  }
+  .game-point-feature {
+    position: relative;
+    display: flex;
+    height: calc(367 / 32 * 1em);
+    padding-top: calc(50 / 32 * 1em);
+    padding-bottom: calc(50 / 32 * 1em);
+    padding-left: calc(40 / 32 * 1em);
+  }
+  .game-point-feature::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    padding-top: calc(367 / 750 * 100%);
+    background: url(../img/game/chambara/bg_point02_list_sp.png) no-repeat center center;
+    background-size: contain;
+  }
+  .game-point-feature-head__label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(465 / 32 * 1em);
+    height: calc(65 / 32 * 1em);
+    background: url(../img/game/chambara/bg_point02_txt.svg) no-repeat center center;
+    background-size: contain;
+    padding-left: calc(36 / 32 * 1em);
+    padding-right: calc(70 / 32 * 1em);
+  }
+  .game-point-feature-head__label > span{
+    display: inline-block;
+    vertical-align: top;
+    font-size: calc(36 / 32 * 1em);
+    color: #fff;
+    font-weight: 900;
+  }
+  .game-point-feature-head__txt{
+    width: calc(330 / 30 * 1em);
+    font-size: calc(30 / 32 * 1em);
+    margin-top: calc(20 / 30 * 1em);
+    padding-left: calc(40 / 30 * 1em);
+    line-height: 1.667;
+  }
+  .game-point-feature-img{
+    position: absolute;
+    bottom: calc(40 / 32 * 1em);
+    right: calc(-30 / 32 * 1em);
+    width: calc(370 / 32 * 1em);
+    height: calc(200 / 32 * 1em);
+  }
+}
+
+/* playstyle */
+@media all and (min-width: 760px) {
+  .game-playstyle{
+    position: relative;
+    z-index: 1;
+    margin-top: calc(15 / 16 * 1em);
+    padding-bottom: calc(80 / 16 * 1em);
+  }
+  .game-main .game-playstyle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background: url(../img/game/chambara/bg_bottom.png) no-repeat center bottom;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 100%;
+    /*padding-bottom: calc(280 / 2560 * 100%);*/
+    padding-bottom: calc(280 / 1560 * 100%);
+    z-index: -1 !important;
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-playstyle{
+    margin-top: calc(15 / 1600 * 100vw);
+    padding-bottom: calc(80 / 1600 * 100vw);
+  }
+  .game-main .game-playstyle::after{
+    background-size: calc(2560 / 1600 * 100vw) auto;
+    z-index: -1;
+  }
+}
+@media all and (max-width: 759px) {
+  .game-playstyle{
+    margin-top: calc(330 / 32 * 1em);
+    padding-bottom: calc(40 / 32 * 1em);
+  }
+  .game-playstyle::before{
+    background: url(../img/game/chambara/bg_bottom_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+}
+
+/* joycon */
+@media all and (min-width: 760px) {
+  .game-joycon-img-list{
+    align-items: center;
+  }
+  .game-joycon-detail__inner{
+    width: calc(439 / 16 * 1em);
+  }
+  .game-joycon-detail-txt{
+    letter-spacing: 0;
+  }
+  .page-chambara .game-joycon-detail__inner{
+    height: calc(106 / 16 * 1em);
+    padding-left: calc(130 / 16 * 1em);
+    padding-right: calc(40 / 16 * 1em);
+    background: url(../img/game/chambara/bg_joycon_chambara01.png) no-repeat center center;
+    background-size: 100% auto;
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-joycon-detail__inner{
+    width: calc(439 / 1600 * 100vw);
+  }
+  .page-chambara .game-joycon-detail__inner{
+    height: calc(106 / 1600 * 100vw);
+    padding-left: calc(130 / 1600 * 100vw);
+    padding-right: calc(40 / 1600 * 100vw);
+  }
+}
+@media all and (max-width: 759px) {
+  .game-joycon-img-list{
+    align-items: center;
+  }
+  .game-joycon-detail__inner{
+    width: calc(666 / 32 * 1em);
+  }
+  .game-joycon-detail-txt{
+    letter-spacing: 0;
+  }
+  .page-chambara .game-joycon-detail__inner{
+    height: calc(160 / 32 * 1em);
+    padding-left: calc(180 / 32 * 1em);
+    padding-right: calc(40 / 32 * 1em);
+    background: url(../img/game/chambara/bg_joycon_chambara01_sp.html) no-repeat center center;
+    background-size: 100% auto;
+  }
+}
+
+/* game-point-movie */
+@media all and (min-width: 760px) {
+  .game-point-movie {
+    position: relative;
+    width: calc(900 / 16 * 1em);
+  }
+  .game-point-movie::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: calc(-45 / 16 * 1em);
+    left: calc(-160 / 16 * 1em);
+    background: url(../img/game/chambara/img_point01_line.png) no-repeat center center;
+    background-size: contain;
+    width: calc(767 / 16 * 1em);
+    height: calc(28 / 16 * 1em);
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-point-movie {
+    width: calc(900 / 1600 * 100vw);
+  }
+  .game-point-movie::after {
+    bottom: calc(-45 / 1600 * 100vw);
+    left: calc(-160 / 1600 * 100vw);
+    width: calc(767 / 1600 * 100vw);
+    height: calc(28 / 1600 * 100vw);
+  }
+}
+@media all and (max-width: 759px) {
+  .game-point-movie::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: calc(-45 / 32 * 1em);
+    left: calc(-400 / 32* 1em);
+    background: url(../img/game/chambara/img_point01_line.png) no-repeat center center;
+    background-size: contain;
+    width: calc(841 / 32 * 1em);
+    height: calc(28 / 32 * 1em);
+  }
+}
+
+
+
+
+@media all and (min-width: 2600px){
+  .-point02 .game-point-content {
+    left: -10%;
+    padding-top: 30px;
+  }
+  .-feature .game-point-content::before{
+    margin-left: 5%;
+  }
+}
