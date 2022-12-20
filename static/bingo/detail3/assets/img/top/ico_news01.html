@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <title>Nintendo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- touch icon -->
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+    <!-- style -->
+    <link href="/css/owl.carousel.min.css" type="text/css" rel="stylesheet">
+    <link href="/css/owl.theme.default.min.css" type="text/css" rel="stylesheet">
+    <link href="/css/common.css?v=201805311412" type="text/css" rel="stylesheet">
+    <link href="/css/main.css?v=201712051050" type="text/css" rel="stylesheet">
+    <link href="/css/amiibo.css" type="text/css" rel="stylesheet">
+    <link href="/css/3ds.css?v=201712041503" type="text/css" rel="stylesheet">
+    <link href="/css/software.css?v=201806141730" type="text/css" rel="stylesheet">
+    <link href="/css/etc.css" type="text/css" rel="stylesheet">
+
+    <!-- script -->
+    <script src="/js/renew/jquery-1.12.0.min.js"></script>
+    <script src="/js/renew/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/renew/owl.carousel.min.js"></script>
+    <script src="/js/renew/TweenMax.min.js"></script>
+    <script src="/js/renew/jquery.ellipsis.min.js"></script>
+    <script src="/js/renew/ui.js"></script>
+
+    <style>
+        .menu_pc {display: list-item;}
+        .menu_mo {display: none;}
+
+        @media screen and (max-width: 1220px) {
+            .menu_pc {display: none;}
+            .menu_mo {display: list-item;}
+        }
+    </style>
+</head>
+
+<body>
+<!-- header -->
+<header>
+    <h1><a href="/main.php">Nintendo</a></h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="/hardware/" >Nintendo Switch</a>
+                <ul>
+                    <li><a href="/hardware/detail/switch-oled/index.php">Nintendo Switch OLED 모델</a></li>
+                    <li><a href="/hardware/detail/switch/index.php">Nintendo Switch </a></li>
+                    <li><a href="/hardware/detail/switch-lite/index.php">Nintendo Switch Lite</a></li>
+                    <li><a href="/hardware/compare/index.php">기능ㆍ특징을 비교</a></li>
+                    <li><a href="/hardware/accessories/index.php">주변기기</a></li>
+                    <li><a href="/switch/onlineservice/index.php">Nintendo Switch Online</a></li>
+                    <li><a href="/switch/parentalcontrols/index.php">Nintendo 지킴이 Switch™ </a></li>
+                    <li><a href="/software/switch/index.php">Nintendo Switch 소프트웨어</a></li>
+                    <li><a href="/support/switch/eshop/index.php">닌텐도 e숍</a></li>
+                </ul>
+            </li>
+           <!-- <li>
+                <a href="/n3ds/index.php"> 닌텐도 3DS</a>
+                <ul>
+                    <li><a href="/n3ds/index.php">닌텐도 3DS란?</a></li>
+                    <li><a href="/n3ds/new_3dsXl.php">New 닌텐도 3DS XL</a></li>
+                    <li><a href="/n3ds/new_2dsXl.php">New 닌텐도 2DS XL</a></li>
+                    <li><a href="/n3ds/others.php">기타 시리즈</a></li>
+                    <li><a href="/software/eshop.php">닌텐도 e숍</a></li>
+                </ul>
+            </li>-->
+            <li>
+                <a href="/software/switch/index.php">소프트웨어</a>
+                <ul>
+                    <li><a href="/software/switch/index.php">Nintendo Switch 소프트웨어</a></li>
+                    <li><a href="/software/3ds/index.php">닌텐도 3DS 소프트웨어</a></li>
+                    <li><a href="/software/release">발매예정 소스트웨어</a></li>
+                    <li><a href="/software/smartphone">스마트폰용 앱</a></li>
+                </ul>
+            </li>
+             <li>
+                <a href="javascript:void(0);">캐릭터</a>
+                <ul>
+                    <li><a href="/character/splatoon/">스플래툰 베이스 홈페이지</a></li>
+                    <li><a href="/character/kirby/">별의 커비 공식 홈페이지</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/support/index.php">고객지원</a>
+                <ul>
+                    <li><a href="/support/switch/index.php">Nintendo Switch 고객지원</a></li>
+                    <li><a href="/support/switch/nintendo_switch_online/">Nintendo Switch Online 서포트</a></li>
+                    <li><a href="/3DS/customer/index.php">닌텐도 3DS 고객지원</a></li>
+                    <li><a href="https://support.nintendo.co.kr/index.do">고객지원 홈페이지</a></li>
+                    <li><a href="https://www.nintendo.co.jp/netinfo/ko_KR/index.html" target="_blank">네트워크 장애 발생 상황</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/news/list.php">News</a>
+                <ul>
+                    <li><a href="/news/list.php?cate=1">News</a></li>
+                    <li><a href="/news/list.php?cate=2">보도자료</a></li>
+                    <li><a href="/news/list.php?cate=3">알림</a></li>
+                    <li><a href="/news/list.php?cate=4">이벤트</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <a href="#" class="btn_gnb is-folded">메뉴 열기/닫기</a>
+    <a href="https://store.nintendo.co.kr/" class="btn_eshop" target="_blank">eshop</a>
+    <a href="#" class="btn_search">검색</a>
+    <div class="box_search">
+        <form action="/search.php" method="get" id="globalSearchFrm" accept-charset="euc-kr">
+		<span>
+			<input type="text" name="globalSearch" placeholder="키워드를 입력해주세요." />
+			<a href="javascript:globalSearch()">검 색</a>
+		</span>
+        </form>
+        <a href="#" class="btn_close_searchBox">검색 닫기</a>
+    </div>
+</header>
+<!-- //header -->
+<script type="text/javascript">
+    function globalSearch(){
+        $("#globalSearchFrm").submit();
+    }
+</script>
+
+<link href="/css/animate.css" rel="stylesheet" />
+<script src="/lib/js/software.js"></script>
+
+<style>
+    footer {margin-bottom: 0 !important;}
+</style>
+
+
+
+<style type="text/css">
+    .pcOnly {display: block;}
+    .moOnly {display: none;}
+
+
+    .error404 {width: 600px; margin: 120px auto; text-align: center;}
+    .error404 img {width: 60px; margin-bottom: 40px;}
+    .error404-comment {font-size: 16px; line-height: 1.6em; margin-bottom: 40px;}
+    .error404-comment h2 {margin-bottom: 30px;}
+
+    @media screen and (max-width: 600px) {
+        .pcOnly {display: none;}
+        .moOnly {display: block;}
+
+        .error404 {width: 80%;}
+        .error404 img {width: 15%;}
+        .error404-comment {font-size: 3.3vw;}
+        .error404-comment h2 {font-size: 4.3vw;}
+        .error404 .btn_view {font-size: 3.3vw;}
+        .error404 .btn_view span {background-size: contain;}
+    }
+</style>
+
+<section class="contents">
+    <article class="error404">
+        <img src="/images/etc/mario-img.gif" alt="마리오이미지">
+
+        <div class="error404-comment">
+            <h2>선택하신 페이지를 찾을 수 없습니다.</h2>
+
+            <p>접속하려고 한 페이지는 삭제, 변경 되었거나 <br class="moOnly">현재 사용할 수 없는 페이지일 수 있습니다.</p>
+            <p>홈페이지 이용에 불편을 끼쳐 드려 죄송합니다.</p>
+            <p>홈페이지 상단의 메뉴 중 원하는 서비스를 찾아주시기 바랍니다.</p>
+        </div>
+
+        <a href="/" class="btn_view w280">
+            <div><span>메인화면으로 가기</span></div></a>
+    </article>
+</section>
+
+<!-- navicator -->
+<div class="navi">
+    <div class="inner">
+        <h1 class="logo_nintendo_red">Nintendo</h1>
+        <a href="#" class="btn_gotoTop">top으로 이동</a>
+    </div>
+</div>
+
+
+<!-- loading -->
+<div class="loading"></div>
+
+<!-- video popup -->
+<div class="dim"></div>
+
+<script>
+    $(document).ready(function(){
+        //main slider
+        var mainSlide = $('.main_slide');
+        var lLength = document.querySelectorAll('.main_slide .item').length;
+
+
+        mainSlide.owlCarousel({
+            items:1,
+            loop:true,
+            rewind: false,
+            nav:true,
+            dots:false,
+            autoplay:true,
+            autoplayTimeout:4000,
+            autoplaySpeed:1000,
+            //animateOut: 'bounceIn',
+            //animateIn: 'bounceIn'
+            callback: true,
+        });
+
+        $('.num-nav .maxLength').text(lLength);
+
+        mainSlide.on('translated.owl.carousel', function (e) {
+            var activeItem = $('.owl-stage-outer .active').find('.item').data('num');
+
+            $('.num-nav .now').text(activeItem);
+        });
+
+
+
+
+        $(".openVideo").on("click",function(e){
+            e.preventDefault();
+
+            var videoId = $(this).attr("data-idx");
+            $(".videoWrap").html("<iframe width='640' height='360' src='https://www.youtube.com/embed/"+videoId+"?autoplay=1&rel=0' frameborder='0' gesture='media' allow='encrypted-media' allowfullscreen></iframe>");
+
+            openLayerPopup();
+        })
+
+        $(".btn_close_layer_popup").on("click",function(e){
+            e.preventDefault();
+            $(".videoWrap").html("");
+        })
+    })
+
+    $(window).load(function(){
+        // 닌텐도로 즐겨요 slider(모바일)
+        if(winWidth<768){
+            main_software();
+        }
+
+        news();
+    })
+
+    $(window).resize(function(){
+        if(winWidth<768){
+            main_software();
+        }else{
+            destroy_main_software();
+        }
+
+        news();
+    })
+
+    function destroy_main_software(){
+        $(".software_list").trigger('destroy.owl.carousel');
+        $(".software_list").removeClass("owl-carousel owl-theme");
+        if(winWidth>1180){
+            $(".software_set_01 .sw_item").width("276");
+        }else{
+            $(".software_set_01 .sw_item").css("width","calc((100% - 60px)/4)");
+        }
+    }
+
+    function main_software(){
+        var imgWidth = winWidth - 80;
+        $(".software_set_01 .sw_item").width(imgWidth);
+
+        $(".software_list").addClass("owl-carousel owl-theme");
+
+        $(".software_list").trigger('destroy.owl.carousel');
+        $(".software_list").owlCarousel({
+            items:1,
+            margin:10,
+            loop:true,
+            center:true,
+            autoWidth:true,
+            dots:false
+        })
+    }
+
+    function news(){
+        if(winWidth<1025){
+            if($(".news_ticker div").length >= 2){
+                $(".news_ticker").trigger('destroy.owl.carousel');
+                $(".news_ticker").addClass("owl-carousel owl-theme");
+                $(".news_ticker").owlCarousel({
+                    items:1,
+                    loop:true,
+                    dots:false,
+                    autoplay:true,
+                    animateOut: 'slideOutUp',
+                    animateIn: 'slideInUp',
+                    autoWidth: false
+                })
+            }
+        }else{
+            $(".news_ticker").trigger('destroy.owl.carousel');
+            $(".news_ticker").removeClass("owl-carousel owl-theme");
+        }
+    }
+
+
+
+</script>
+
+
+
+<!-- bottom -->
+<section class="bottom">
+    <div class="inner">
+        <div class="link">
+            <ul class="sns">
+                <li><a class="ico_youtube" href="https://www.youtube.com/channel/UCRCK5FCJtomQT3b88jXI_DA" target="_blank">유튜브</a></li>
+                <li><a class="ico_kakaoStory" href="https://story.kakao.com/ch/nintendokorea/" target="_blank">카카오스토리</a></li>
+                <li><a class="ico_facebook" href="https://www.facebook.com/Nintendo.kr" target="_blank">페이스북</a></li>
+                <li><a class="ico_twitter" href="https://twitter.com/Nintendo_Korea" target="_blank">트위터</a></li>
+                <li><a class="ico_kakaoChannel" href="https://pf.kakao.com/_Xxiwzxj" target="_blank">카카오채널</a></li>
+            </ul>
+            <div class="btnBox">
+                <a class="ico_myNintendo" href="https://my.nintendo.com/" target="_blank">My Nintendo</a>
+                <a class="ico_amiibo" href="/amiibo/" target="_blank">amiibo</a>
+            </div>
+        </div>
+        <!-- //link end -->
+    </div>
+    <!-- //inner end -->
+
+    <div class="bottom_nav">
+        <ul>
+            <li>
+                <a href="#">한국닌텐도</a>
+                <ul>
+                    <li><a href="/corporate/kr/kr01.html">- 회사개요</a></li>
+                    <li><a href="/corporate/kr/kr04.html">- 찾아오시는 길</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">본체 / amiibo</a>
+                <ul>
+                    <li><a href="/switch/index.php">- Nintendo Switch</a></li>
+                    <li><a href="/n3ds/new_3dsXl.php">- New 닌텐도 3DS XL</a></li>
+                    <li><a href="/n3ds/new_2dsXl.php">- New 닌텐도 2DS XL</a></li>
+                    <li><a href="/amiibo/index.php">- amiibo</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">소프트웨어</a>
+                <ul>
+                    <li><a href="/software/software_all.php">- 전체 소프트웨어</a></li>
+                    <li><a href="/software/switch/index.php">- Nintendo Switch 소프트웨어</a></li>
+                    <li><a href="/software/3ds/index.php">- 닌텐도 3DS 소프트웨어</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">고객지원</a>
+                <ul>
+                    <li><a href="/support/switch/index.php">- Nintendo Switch</a></li>
+                    <li><a href="/3DS/customer/index.php">- 닌텐도 3DS</a></li>
+                    <li><a href="/Wii/customer/customer.php">- Wii</a></li>
+                    <li><a href="/DS/customer/customer.php">- 닌텐도 DS</a></li>
+                    <li><a href="https://support.nintendo.co.kr/index.do" target="_blank">- 고객지원 홈페이지</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- //bottom_nav end -->
+</section>
+<!-- //bottom end -->
+
+<!-- footer -->
+<footer>
+    <div class="inner">
+        <div class="btnTerms">
+            <a href="/common/account.php">이용약관</a>
+            <a href="/common/privacy.php" class="privacy">개인정보처리방침</a>
+        </div>
+        <p class="f_cs_info">고객지원 문의전화 : 1670-9900 <span class="bl_m">(평일 오전 9시 30분~오후 5시 30분)</span><span class="bl">※ 토/일/공휴일/회사 정기휴일 및 특별휴일 제외</span></p>
+
+        <address>ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.<br/>
+            <span>상호명 : 한국닌텐도주식회사</span>
+            <span>대표자명 : 미우라 타카히로</span>
+            사업자등록번호 : 120-87-03578</address>
+    </div>
+    <!-- //inner end -->
+</footer>
+<!-- //footer -->
+
+
+
+<!-- 2019.12.03 레이어 팝업 추가 -->
+
+<!-- 여기부터 모바일용 -->
+
+<script>
+    var cookieData = document.cookie;
+    var fabricated = cookieData.replace(/ /gi, ""); // 공백제거
+    var fabricatedCookieData = fabricated.split(';'); // 세미콜론을 기준으로 문자열 쪼개기 (배열에 담김)
+    var finalFabricated = [];
+
+    for (var i = 0; i < fabricatedCookieData.length; i++ ){
+        finalFabricated[i] = fabricatedCookieData[i].split('=');
+    }
+
+    if (finalFabricated.length > 0) {
+        for (var k = 0; k < finalFabricated.length; k++ ){
+            $('#' + finalFabricated[k][0]).remove(); // PC 슬라이드 제거
+            $('.slide-item[data-idx="'+ finalFabricated[k][0]+'"]').remove(); // 모바일 슬라이드 제거
+        }
+    }
+
+    function setCookie( name, value, expiredays ) {
+        var todayDate = new Date();
+        todayDate.setDate( todayDate.getDate() + expiredays );
+        document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        $('#'+ name).remove();
+        $('.slide-item[data-idx="'+ name+'"]').remove();
+    }
+
+    function closeWin(target) {
+        $('#'+ target).remove();
+    }
+
+    function todaycloseWin(cookieName) {
+        setCookie(cookieName, "done", 1);
+    }
+
+    var active_num = 0; // 슬라이드 초기값
+    var total_slide = 0; // 팝업 슬라이드 초기값
+    function notToday(e) {
+        var d = $(e).closest('.layer-inner').find('.active').find('.slide-item').attr('data-idx');
+
+        layerPopMo.trigger('remove.owl.carousel', active_num);
+        layerPopMo.trigger('refresh.owl.carousel');
+
+
+        setCookie(d, "done", 1);
+        $("#"+ d).remove();
+
+
+        if (total_slide === 0) {
+            closeWin('no_more_mo');
+        }
+    }
+
+    function callback(event) {
+        var item = event.item.index; // active 된 슬라이드의 인덱스 번호
+        var items = event.item.count; // 팝업 슬라이드의 아이템 갯수
+
+        active_num = item;
+        total_slide = items;
+    }
+
+    var length_length = $('.layer-inner .slide-item').length;
+    var layerPopMo = $('.layer_popup_main.current_mo .owl-carousel');
+
+    $(window).load(function () {
+        layerPopMo.owlCarousel({
+            items: 1,
+            loop: false,
+            nav: false,
+            dots: true,
+            autoHeight: true,
+            onRefresh: callback,
+            onChanged: callback,
+            onInitialize: callback,
+        });
+        $('.loading-box').fadeOut();
+        $('.owl-carousel').fadeIn();
+    });
+
+    layerPopMo.trigger('refresh.owl.carousel');
+
+    if (length_length === 0) {
+        closeWin('no_more_mo');
+    }
+</script>
+
+
+
+<!-- acecounter 2018.02.26 -->
+<script type="text/javascript" src="/lib/include/acecounter.js"></script>
+
+</body>
+</html>

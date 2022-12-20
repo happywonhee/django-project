@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/* CSS Document */
+@media all and (min-width: 760px) {
+
+}
+@media all and (min-width: 760px) and (max-width: 979px) {
+
+}
+@media screen and (max-width: 759px) {
+
+}
+/* ==================================================
+Volleyball
+================================================== */
+/* game-top-hero */
+@media all and (min-width: 760px) {
+  .game-top-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: url(../img/game/volleyball/bg_hero.png) no-repeat center top;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 100%;
+  }
+  .game-top-hero__model{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: calc(-100 / 16 * 1em);
+    margin-left: calc(-60 / 16 * 1em);
+    z-index: 0;
+    display: block;
+    background: url(../img/game/volleyball/bg_hero_model.png) no-repeat center top;
+    background-size: contain;
+    width: calc(943 / 16 * 1em);
+    height: calc(1095 / 16 * 1em);
+  }
+  .game-section-head__ico{
+    width: calc(87 / 16 * 1em);
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-top-hero::before{
+    background-size: calc(2560 / 1600 * 100vw) auto;
+  }
+  .game-top-hero__model{
+    margin-bottom: calc(-100 / 1600 * 100vw);
+    margin-left: calc(-60 / 1600 * 100vw);
+    width: calc(943 / 1600 * 100vw);
+    height: calc(1095 / 1600 * 100vw);
+  }
+  .game-section-head__ico{
+    width: calc(87 / 1600 * 100vw);
+  }
+}
+@media screen and (max-width: 759px) {
+  .game-top-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: url(../img/game/volleyball/bg_hero_sp.html) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) auto;
+    width: 100%;
+    height: 100%;
+  }
+  .game-top-hero__model::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 33.33333%;
+    margin-bottom: calc(-100 / 32 * 1em);
+    margin-left: calc(-60 / 32 * 1em);
+    z-index: 0;
+    display: block;
+    background: url(../img/game/volleyball/bg_hero_model.png) no-repeat center top;
+    background-size: contain;
+    width: calc(809 / 32 * 1em);
+    height: calc(903 / 32 * 1em);
+  }
+  .game-section-head__ico{
+    width: calc(116 / 32 * 1em);
+  }
+  .game-section-head-sub__label {
+    width: calc(149 / 32 * 1em);
+  }
+  .game-top-hero-body::before {
+    background: url(../img/game/volleyball/bg_content_frame_top_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+  .game-top-hero-body::after {
+    background: url(../img/game/volleyball/bg_content_frame_bottom_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+}
+
+
+/* game-point */
+@media screen and (min-width: 760px) {
+  /* point01 */
+  .-point01.game-point {
+    justify-content: flex-start;
+  }
+  .-point01 .game-point-img {
+    width:  calc(1355 / 16 * 1em);
+    margin-left: calc(-380 / 16 * 1em);
+  }
+  .-point01 .game-point-content {
+    right: 0;
+  }
+  .-point01 .game-point-content-head {
+    width:  calc(391 / 16 * 1em);
+    margin-top: calc(40 / 16 * 1em);
+  }
+  /* point02 */
+  .-point02.game-point {
+    justify-content: flex-end;
+  }
+  .-point02 .game-point-content {
+    left: 0;
+  }
+  .-point02 .game-point-img {
+    width:  calc(1270 / 16 * 1em);
+    margin-right: calc(-385 / 16 * 1em);
+  }
+  .-point02 .game-point-content-head {
+    width:  calc(391 / 16 * 1em);
+    margin-top: calc(60 / 16 * 1em);
+    /*width:  calc(575 / 16 * 1em);    */
+  }
+  .-point02 .game-point-content::before {
+    content: "";
+    position: absolute;
+    bottom: calc(-405 / 16 * 1em);
+    left: calc(-220 / 16 * 1em);
+    display: block;
+    background: url(../img/game/volleyball/img_point02_chara.png) no-repeat center top;
+    background-size: 100% auto;
+    width: calc(735 / 16 * 1em);
+    height: calc(405 / 16 * 1em);
+    z-index: 2;
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  /* point01 */
+  .-point01 .game-point-img {
+    width:  calc(1355 / 1600 * 100vw);
+    margin-left: calc(-380 / 1600 * 100vw);
+  }
+  .-point01 .game-point-content-head {
+    width:  calc(391 / 1600 * 100vw);
+    margin-top: calc(40 / 1600 * 100vw);
+  }
+  /* point02 */
+  .-point02 .game-point-img {
+    width:  calc(1270 / 1600 * 100vw);
+    margin-right: calc(-385 / 1600 * 100vw);
+    z-index: 2;
+  }
+  .-point02 .game-point-content-head {
+    width:  calc(391 / 1600 * 100vw);
+    margin-top: calc(60 / 1600 * 100vw);
+/*    width:  calc(575 / 1600 * 100vw);*/
+  }
+  .-point02 .game-point-content::before {
+    bottom: calc(-405 / 1600 * 100vw);
+    left: calc(-220 / 1600 * 100vw);
+    width: calc(735 / 1600 * 100vw);
+    height: calc(405 / 1600 * 100vw);
+  }
+}
+@media screen and (max-width: 759px) {
+  /* point01 */
+  .-point01 .game-point-img {
+    width: 100%;
+  }
+  .-point01 .game-point-content-head {
+    width:  100%;
+  }
+  /* point02 */
+  .-point02 .game-point-content-head {
+    width:  calc(575 / 32 * 1em);
+    margin: auto;
+  }
+  .-point02 .game-point-content::before {
+    content: "";
+    position: absolute;
+    bottom: calc(-150 / 32 * 1em);
+    left: calc(-130 / 32 * 1em);
+    z-index: 1;
+    display: block;
+    background: url(../img/game/volleyball/img_point02_chara.png) no-repeat center top;
+    background-size: 100% auto;
+    width: calc(575 / 32 * 1em);
+    height: calc(349 / 32 * 1em);
+  }
+}
+
+
+/* playstyle */
+@media all and (min-width: 760px) {
+  .game-playstyle{
+    position: relative;
+    margin-top: calc(30 / 16 * 1em);
+    padding-bottom: calc(80 / 16 * 1em);
+  }
+
+  .game-main .game-playstyle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background: url(../img/game/volleyball/bg_bottom.png) no-repeat center bottom;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 100%;
+    /*padding-bottom: calc(280 / 2560 * 100%);*/
+    padding-bottom:  calc(280 / 1560 * 100%);
+    z-index: -1 !important;
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-playstyle{
+    margin-top: calc(30 / 1600 * 100vw);
+    padding-bottom: calc(80 / 1600 * 100vw);
+  }
+  .game-main .game-playstyle::after{
+    background-size: calc(2560 / 1600 * 100vw) auto;
+  }
+}
+@media all and (min-width: 759px) {
+  .game-playstyle{
+    z-index: 1;
+  }
+  .game-playstyle::before{
+    background: url(../img/game/volleyball/bg_bottom_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+}
+
+
+
+
+/* game-point */
+@media screen and (min-width: 760px) {
+  /* point03 */
+  .-point03.game-point {
+    justify-content: flex-start;
+    margin-top: calc(40/16*-1em);
+  }
+  .-point03 .game-point-movie {
+    margin-left: calc(-230 / 16 * 1em);
+  }
+  .-point03 .game-point-content {
+    right: 0;
+    width:  calc(593 / 16 * 1em);
+    margin-top: calc(104 / 16 * 1em);
+  }
+  .-point03 .game-point-content-head {
+    position: relative;
+    width: calc(593 / 16 * 1em);
+  }
+  .-point03 .game-point-content-head__label {
+    display: inline-block;
+    margin-top: calc(0 / 16 * 1em);
+    width: 100%;
+  }
+  .-point03 .game-point-content-head__icon {
+    width: calc(188 / 16 * 1rem);
+    font-size: 0;
+    line-height: 1;
+    position: absolute;
+    top: calc(55 / 16 * -1rem);
+    left: 0;
+  }
+  .-point03 .game-point-content-head__icon::before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: calc(41/189*100%);
+    background-image: url(../img/game/volleyball/ico_update_game.png);
+    /*background-size: contain;*/
+    background-size: 100% auto;
+  }
+  .-point03 .game-point-movie {
+    position: relative;
+    width: calc(900 / 16 * 1em);
+  }
+  .-point03 .game-point-movie::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: calc(-40 / 16 * 1em);
+    left: calc(-160 / 16 * 1em);
+    background: url(../img/game/volleyball/img_point03_line.html) no-repeat center center;
+    background-size: contain;
+    width: calc(767 / 16 * 1em);
+    height: calc(28 / 16 * 1em);
+  }
+  .-point03 .game-point-content-txt__txt {
+    margin-right: -1em;
+  }
+  .-point03 .game-point-content-txt__txt > span {
+    font-size: calc(15/24*100%);
+    margin-top: calc(30/16*1rem);
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  /* point03 */
+  .-point03 .game-point-movie {
+    position: relative;
+    margin-left: calc(-230 / 1600 * 100vw);
+  }
+  .-point03 .game-point-content {
+    width:  calc(585 / 1600 * 100vw);
+    margin-top: calc(120 / 1600 * 100vw);
+  }
+  .-point03 .game-point-content::before {
+    top: calc(212 / 1600 * 100vw);
+    right: calc(-224 / 1600 * 100vw);
+    width: calc(428 / 1600 * 100vw);
+    height: calc(449 / 1600 * 100vw);
+  }
+  .-point03 .game-point-content-head {
+    width: calc(593 / 1600 * 100vw);
+  }
+  .-point03 .game-point-content-head__label {
+    margin-top: calc(0 / 1600 * 100vw);
+  }
+  .-point03 .game-point-content-head__icon {
+    width: calc(188 / 1600 * 100vw);
+    top: calc(55 / 1600 * -100vw);
+  }
+  .-point03 .game-point-movie {
+    width: calc(900 / 1600 * 100vw);
+  }
+  .-point03 .game-point-movie::after {
+    bottom: calc(-40 / 1600 * 100vw);
+    left: calc(-160 / 1600 * 100vw);
+    width: calc(767 / 1600 * 100vw);
+    height: calc(28 / 1600 * 100vw);
+  }
+}
+@media screen and (max-width: 759px) {
+  /* point01 */
+  .-point03 .game-point-content-head {
+    width:  calc(560 / 32 * 1em);
+    position: relative;
+  }
+  .-point03 .game-point-content-head__icon {
+    width: calc(166 / 32 * 1rem);
+    font-size: 0;
+    line-height: 1;
+    position: absolute;
+    top: calc(16 / 32 * 1rem);
+    left: calc(60 / 32 * -1rem);
+  }
+  .-point03 .game-point-content-head__icon::before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: calc(46/166*100%);
+    background: url(../img/game/volleyball/ico_update_game_sp.html) center/contain no-repeat;
+  }
+  .-point03 .game-point-movie::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: calc(-40 / 32 * 1em);
+    left: calc(-360 / 32 * 1em);
+    background: url(../img/game/volleyball/img_point03_line.html) no-repeat center center;
+    background-size: contain;
+    width: calc(841 / 32 * 1em);
+    height: calc(28 / 32 * 1em);
+  }
+  .-point03 .game-point-content-txt__txt > span {
+    font-size: calc(26/32*100%);
+    margin-top: calc(20/32*1rem);
+    display: block;
+    font-weight: normal;
+  }
+}
+
+
+

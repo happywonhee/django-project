@@ -1,7 +1,7 @@
+{% extends "bingo_base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html  >
-<head>
+
+{% block head %}
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v5.6.13, mobirise.com">
@@ -28,42 +28,22 @@
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="{% static "bingo/detail1/mobirise/css/mbr-additional.css"%}"><link rel="stylesheet" href="{% static "bingo/detail1/mobirise/css/mbr-additional.css"%}" type="text/css">
-  
-  
-  
-  
-</head>
-<body>
-  
-    <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-h">
-    
-        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-            <div class="container">
-                <div class="navbar-brand">
-                    <span class="navbar-logo">
-                        
-                        <a href="{% url 'bingo:bingo' %}"><img src="{% static "bingo/detail1/images/mbr-121x147.png"%}" alt="" style="height: 3.8rem;"></a>
-                        
-                    </span>
-                    <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-7" href="{% url 'bingo:bingo' %}">NoryangsSim</a></span>
-                </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://www.nintendo.co.kr/support/index.php" target="_blank">고객센터</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://www.nintendo.co.kr/news/list.php" target="_blank">News</a></li></ul>
-                    
-                    
-                </div>
-            </div>
-        </nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </section>
+  <!-- Bootstrap CDN URL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"                        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"                              integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  
+  
+  
+{% endblock %}
+
+{% block content %}
+  
+    
 
 <section data-bs-version="5.1" class="video1 cid-tpdlktIjjy mbr-parallax-background" id="video1-s">
     
@@ -141,54 +121,4 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="footer3 cid-s48P1Icc8J" once="footers" id="footer3-i">
-
-    
-
-    
-
-    <div class="container">
-        <div class="media-container-row align-center mbr-white">
-            <div class="row row-links">
-                <ul class="foot-menu">
-                    
-                    
-                    
-                    
-                    
-                <li class="foot-menu-item mbr-fonts-style display-7"><a href="https://support.nintendo.co.kr/index.do" class="text-success text-primary" target="_blank">Help Center</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="https://www.nintendo.co.kr/software/software_all.php?division=switch&lang=0" class="text-success text-primary" target="_blank">Software</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="https://www.nintendo.co.kr/main.php" class="text-success text-primary" target="_blank">Nintendo.co.kr</a></li></ul>
-            </div>
-            <div class="row social-row">
-                <div class="social-list align-right pb-2">
-                    
-                    
-                    
-                    
-                    
-                    
-                <div class="soc-item">
-                        <a href="https://twitter.com/Nintendo_Korea" target="_blank">
-                            <span class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon"></span>
-                        </a>
-                    </div><div class="soc-item">
-                        <a href="https://www.facebook.com/Nintendo.kr" target="_blank">
-                            <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
-                        </a>
-                    </div><div class="soc-item">
-                        <a href="https://www.youtube.com/@user-qs1ki1tu6b" target="_blank">
-                            <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon"></span>
-                        </a>
-                    </div></div>
-            </div>
-            <div class="row row-copirayt">
-                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
-                    © Nintendo
-                </p>
-            </div>
-        </div>
-    </div>
-    
-    
-    <input name="animation" type="hidden">
-  </body>
-</html>
+{% endblock %}

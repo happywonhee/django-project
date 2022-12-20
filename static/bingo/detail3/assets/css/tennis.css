@@ -1,0 +1,490 @@
+@charset "UTF-8";
+/* CSS Document */
+@media all and (min-width: 760px) {
+
+}
+@media all and (min-width: 760px) and (max-width: 979px) {
+
+}
+@media screen and (max-width: 759px) {
+
+}
+/* ==================================================
+Tennis
+================================================== */
+/* game-top-hero */
+@media all and (min-width: 760px) {
+  .game-top-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: url(../img/game/tennis/bg_hero.png) no-repeat center top;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 108%;
+  }
+  .game-top-hero__model{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: calc(-190 / 16 * 1em);
+    z-index: 0;
+    display: block;
+    background: url(../img/game/tennis/bg_hero_model.png) no-repeat center top;
+    background-size: contain;
+    width: calc(1162 / 16 * 1em);
+    height: calc(1293 / 16 * 1em);
+  }
+  .game-section-head__ico{
+    width: calc(98 / 16 * 1em);
+    margin-bottom: calc(10 / 16 * 1em);
+  }
+  .game-top-hero-body::before {
+    height: 101%;
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-top-hero::before{
+    background-size: calc(2560 / 1600 * 100vw) auto;
+  }
+  .game-top-hero__model{
+    margin-left: calc(-190 / 1600 * 100vw);
+    width: calc(1162 / 1600 * 100vw);
+    height: calc(1293 / 1600 * 100vw);
+  }
+  .game-section-head__ico{
+    width: calc(98 / 1600 * 100vw);
+    margin-bottom: calc(10 / 1600 * 100vw);
+  }
+}
+@media screen and (max-width: 759px) {
+  .game-top-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: url(../img/game/tennis/bg_hero_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) auto;
+    width: 100%;
+    height: 100%;
+  }
+  .game-top-hero__model::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 33.33333%;
+    margin-bottom: calc(80 / 32 * 1em);
+    margin-left: calc(-100 / 32 * 1em);
+    z-index: 0;
+    display: block;
+    background: url(../img/game/tennis/bg_hero_model.png) no-repeat center top;
+    background-size: contain;
+    width: calc(893 / 32 * 1em);
+    height: calc(948 / 32 * 1em);
+  }
+  .game-section-head__ico{
+    width: calc(118 / 32 * 1em);
+  }
+  .game-section-head-sub__label {
+    width: calc(97 / 32 * 1em);
+  }
+  .game-top-hero-body::before {
+    background: url(../img/game/tennis/bg_content_frame_top_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+  .game-top-hero-body::after {
+    background: url(../img/game/tennis/bg_content_frame_bottom_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+}
+
+/* game-main */
+@media screen and (min-width: 760px) {
+  .game-main::before{
+    content: "";
+    position: absolute;
+    /*top: calc(-390 / 16 * 1em);*/
+    top: calc(-190 / 16 * 1em);
+    display: block;
+    /*background: url(../img/game/tennis/bg_content_frame.png) no-repeat center top;*/
+    background: url(../img/game/tennis/bg_content_frame.png) no-repeat center -210px;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: calc(1240 / 2560 * 100%);
+  }
+  .game-main__inner {
+    padding-top:  calc(180 / 16 * 1em);
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .game-joycon-img__label2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-main::before{
+    /*top: calc(-400 / 1600 * 100vw);*/
+    top: calc(-160 / 16 * 1em);
+    background-size: calc(2560 / 1600 * 100vw) auto;
+  }
+  .game-main__inner {
+    padding-top:  calc(180 / 1600 * 100vw);
+  }
+}
+
+.game-operation_supplement img {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+  .game-operation_supplement {
+    display: block;
+    width: calc(430 / 16 * 1em);
+    margin: auto;
+    margin-top: calc(15 / 16 * 1em);
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-operation_supplement {
+    display: block;
+    width: calc(430 / 1600 * 100vw);
+    margin: auto;
+    margin-top: calc(15 / 1600 * 100vw);
+  }
+}
+
+/* game-point */
+@media screen and (min-width: 760px) {
+  /* point01 */
+  .-point01.game-point {
+    justify-content: flex-start;
+  }
+  .-point01 .game-point-movie {
+    margin-left: calc(-230 / 16 * 1em);
+  }
+  .-point01 .game-point-content {
+    right: 0;
+  }
+  .-point01 .game-point-content-head {
+    width:  calc(585 / 16 * 1em);
+    margin-top: calc(65 / 16 * 1em);
+  }
+  .-point01 .game-point-content::before {
+    content: "";
+    position: absolute;
+    top: calc(212 / 16 * 1em);
+    right: calc(-224 / 16 * 1em);
+    display: block;
+    background: url(../img/game/tennis/img_point01_chara.png) no-repeat center top;
+    background-size: 100% auto;
+    width: calc(428 / 16 * 1em);
+    height: calc(449 / 16 * 1em);
+    z-index: 0;
+  }
+  .-point01 .game-point-movie {
+    position: relative;
+    width: calc(900 / 16 * 1em);
+  }
+  .-point01 .game-point-movie::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: calc(-40 / 16 * 1em);
+    left: calc(-160 / 16 * 1em);
+    background: url(../img/game/tennis/img_point01_line.png) no-repeat center center;
+    background-size: contain;
+    width: calc(767 / 16 * 1em);
+    height: calc(28 / 16 * 1em);
+  }
+
+  /* point02 */
+  .game-main-section:nth-of-type(2) {
+    margin-top: calc(112 / 16 * 1em);
+  }
+  .-point02.game-point {
+    justify-content: flex-end;
+  }
+  .-point02 .game-point-content {
+    left: 0;
+    z-index: 3;
+  }
+  .-point02 .game-point-img {
+    width:  calc(1111 / 16 * 1em);
+    margin-right: calc(-385 / 16 * 1em);
+  }
+  .-point02 .game-point-content-head {
+    width:  calc(622 / 16 * 1em);
+  }
+  .-point02 .game-point-movie-frame::before {
+    content: "";
+    position: absolute;
+    top: calc(120 / 16 * 1em);
+    left: calc(-180 / 16 * 1em);
+    display: block;
+    background: url(../img/game/tennis/img_point02_chara.png) no-repeat center top;
+    background-size: 100% auto;
+    width: calc(301 / 16 * 1em);
+    height: calc(301 / 16 * 1em);
+    z-index: 2;
+  }
+  .-point02 .game-point-movie {
+    margin-right: calc(-230 / 16 * 1em);
+  }
+  .game-point-content-txt__txt small {
+    font-size: calc(11 / 16 * 1em);
+  }
+  .-point02 .game-point-movie {
+    position: relative;
+    width: calc(900 / 16 * 1em);
+  }
+  .-point02 .game-point-movie::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: calc(-40 / 16 * 1em);
+    right: calc(-180 / 16 * 1em);
+    background: url(../img/game/tennis/img_point02_line.png) no-repeat center center;
+    background-size: contain;
+    width: calc(611 / 16 * 1em);
+    height: calc(28 / 16 * 1em);
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  /* point01 */
+  .-point01 .game-point-movie {
+    position: relative;
+    margin-left: calc(-230 / 1600 * 100vw);
+  }
+  .-point01 .game-point-content-head {
+    width:  calc(585 / 1600 * 100vw);
+    margin-top: calc(65 / 1600 * 100vw);
+  }
+  .-point01 .game-point-content::before {
+    top: calc(212 / 1600 * 100vw);
+    right: calc(-224 / 1600 * 100vw);
+    width: calc(428 / 1600 * 100vw);
+    height: calc(449 / 1600 * 100vw);
+  }
+  .-point01 .game-point-movie {
+    width: calc(900 / 1600 * 100vw);
+  }
+  .-point01 .game-point-movie::after {
+    bottom: calc(-40 / 1600 * 100vw);
+    left: calc(-160 / 1600 * 100vw);
+    width: calc(767 / 1600 * 100vw);
+    height: calc(28 / 1600 * 100vw);
+  }
+
+
+  /* point02 */
+  .game-main-section:nth-of-type(2) {
+    margin-top: calc(112 / 1600 * 100vw);
+    /*margin-bottom: calc(60 / 1600 * 100vw);*/
+    margin-bottom: 0;
+    padding-bottom: calc(60 / 1600 * 100vw);
+  }
+  .-point02 .game-point-img {
+    width:  calc(1111 / 1600 * 100vw);
+    margin-right: calc(-385 / 1600 * 100vw);
+  }
+  .-point02 .game-point-content-head {
+    width:  calc(622 / 1600 * 100vw);
+  }
+  .-point02 .game-point-movie-frame::before {
+    top: calc(120 / 1600 * 100vw);
+    left: calc(-180 / 1600 * 100vw);
+    width: calc(301 / 1600 * 100vw);
+    height: calc(301 / 1600 * 100vw);
+  }
+  .-point02 .game-point-movie {
+    width: calc(900 / 1600 * 100vw);
+  }
+  .-point02 .game-point-movie::after {
+    bottom: calc(-40 / 1600 * 100vw);
+    right: calc(-180 / 1600 * 100vw);
+    width: calc(611 / 1600 * 100vw);
+    height: calc(28 / 1600 * 100vw);
+  }
+}
+@media screen and (max-width: 759px) {
+  /* point01 */
+  .-point01 .game-point-content-head {
+    width:  calc(540 / 32 * 1em);
+  }
+  .-point01 .game-point-content::before {
+    content: "";
+    position: absolute;
+    bottom: calc(-200 / 32 * 1em);
+    right: calc(-130 / 32 * 1em);
+    display: block;
+    background: url(../img/game/tennis/img_point01_chara.png) no-repeat center top;
+    background-size: 100% auto;
+    width: calc(393 / 32 * 1em);
+    height: calc(413 / 32 * 1em);
+    z-index: 0;
+  }
+  .-point01 .game-point-movie::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: calc(-40 / 32 * 1em);
+    left: calc(-360 / 32 * 1em);
+    background: url(../img/game/tennis/img_point01_line.png) no-repeat center center;
+    background-size: contain;
+    width: calc(841 / 32 * 1em);
+    height: calc(28 / 32 * 1em);
+  }
+
+  /* point02 */
+  .game-main-section:nth-of-type(2) {
+    margin-top: calc(130 / 32 * 1em);
+    /*margin-bottom: calc(130 / 32 * 1em);*/
+    margin-bottom: 0;
+    padding-bottom: calc(130 / 32 * 1em);
+  }
+  .-point02 .game-point-content-head {
+    /*width:  calc(594 / 32 * 1em);*/
+    width:  calc(670 / 32 * 1em);
+  }
+  .-point02 .game-point-movie-frame::before {
+    content: "";
+    position: absolute;
+    top: calc(250 / 32 * 1em);
+    left: calc(-50 / 32 * 1em);
+    display: block;
+    background: url(../img/game/tennis/img_point02_chara_sp.png) no-repeat center top;
+    background-size: 100% auto;
+    width: calc(306 / 32 * 1em);
+    height: calc(305 / 32 * 1em);
+    z-index: 2;
+  }
+  .game-point-content-txt__txt small {
+    display: inline-block;
+    vertical-align: top;
+    font-size: calc(26 / 32 * 1em);
+    font-weight: 400;
+    line-height: 1.6;
+    padding-top: calc(15 / 26 * 1em);
+    text-indent: calc(-30 / 32 * 1em);
+    margin-left: calc(30 / 32 * 1em);
+  }
+  .-point02 .game-point-movie::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: calc(-40 / 32 * 1em);
+    right: calc(-200 / 32 * 1em);
+    background: url(../img/game/tennis/img_point02_line_sp.png) no-repeat center center;
+    background-size: contain;
+    width: calc(511 / 32 * 1em);
+    height: calc(28 / 32 * 1em);
+  }
+}
+
+/* playstyle */
+@media all and (min-width: 760px) {
+  .game-playstyle{
+    position: relative;
+    margin-top: calc(15 / 16 * 1em);
+    padding-bottom: calc(80 / 16 * 1em);
+  }
+  .game-playstyle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background: url(../img/game/tennis/bg_bottom.png) no-repeat center bottom;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 100%;
+    /*padding-bottom: calc(280 / 2560 * 100%);*/
+    padding-bottom: calc(280 / 1560 * 100%);
+    z-index: -1;
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-playstyle{
+    margin-top: calc(15 / 1600 * 100vw);
+    padding-bottom: calc(80 / 1600 * 100vw);
+  }
+  .game-playstyle::after{
+    background-size: calc(2560 / 1600 * 100vw) auto;
+  }
+}
+@media all and (max-width: 759px) {
+  .game-playstyle{
+    margin-top: calc(150 / 32 * 1em);
+  }
+  .game-playstyle::before{
+    background: url(../img/game/tennis/bg_bottom_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+}
+
+/* joycon */
+@media all and (min-width: 760px) {
+  .game-joycon-img-list{
+    align-items: center;
+  }
+  .game-joycon-detail__inner{
+    width: calc(439 / 16 * 1em);
+  }
+  .game-joycon-detail-txt{
+    letter-spacing: 0;
+  }
+  .game-joycon-detail__inner{
+    height: calc(117 / 16 * 1em);
+    padding-right: calc(130 / 16 * 1em);
+    padding-left: calc(40 / 16 * 1em);
+    background: url(../img/game/tennis/bg_joycon_tennis01.png) no-repeat center center;
+    background-size: 100% auto;
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-joycon-detail__inner{
+    width: calc(439 / 1600 * 100vw);
+  }
+  .game-joycon-detail__inner{
+    height: calc(117 / 1600 * 100vw);
+    padding-right: calc(130 / 1600 * 100vw);
+    padding-left: calc(40 / 1600 * 100vw);
+  }
+}
+@media all and (max-width: 759px) {
+  .game-joycon-detail__inner{
+    width: calc(665 / 32 * 1em);
+  }
+  .game-joycon-detail-txt{
+    letter-spacing: 0;
+  }
+  .game-joycon-detail__inner{
+    height: calc(178 / 32 * 1em);
+    padding-right: calc(360 / 32 * 1em);
+    padding-left: calc(75 / 32 * 1em);
+    background: url(../img/game/tennis/bg_joycon_tennis01.png) no-repeat center center;
+    background-size: 100% auto;
+  }
+}
+
+/* game-play-video-dot */
+@media screen and (max-width: 759px) {
+  .page-tennis .game-play-video-dot__item{
+    width: calc((100% - calc(32 / 32 * 1em)) / 3 )!important;
+  }
+  .page-tennis .game-play-video-dot__item:nth-child(2){
+    margin-right: calc(16 / 32 * 1em)!important;
+  }
+  .page-tennis .game-play-video-dot__item:nth-child(3){
+    margin-right: 0!important;
+  }
+}
+
+
