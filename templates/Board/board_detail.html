@@ -72,7 +72,7 @@
     </div>
     
     <div class="card-footer d-flex justify-content-between">
-      <a href="/" class="btn btn-outline-dark">목록</a>
+      <a href="{% url 'Board:list'  %}" class="btn btn-outline-dark">목록</a>
       {% if user == object.author %}
       <span>
         <a href="{% url 'Board:board_update' object.id %}" class="btn btn-outline-dark">수정</a>
