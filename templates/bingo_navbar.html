@@ -1,0 +1,80 @@
+{% load static %}
+<section data-bs-version="5.1" class="menu cid-tq6HRmehEl" once="menu" id="menu1-1q">
+    
+  <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+          <div class="navbar-brand">
+              <span class="navbar-logo">
+                  
+                      <a href="{% url 'bingo:bingo' %}"><img src="{%static "assets/images/logo-100x100.png"%}" alt="" style="height: 3.8rem;"></a>
+                  
+              </span>
+              <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-5" href="{% url 'bingo:bingo' %}">DINGO BING</a></span>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                <li class="nav-item dropdown">
+                  <a class="nav-link link text-black text-primary dropdown-toggle " href="#" target="_blank" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 16px;">PC</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown-875">
+                    <a class="text-black text-primary dropdown-item " href="{% url 'bingo:detail3' %}">Sudden Attack</a>
+                    <a class="text-black text-primary show dropdown-item " href="#">Open예정</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link text-black text-primary dropdown-toggle " href="#" target="_blank" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 16px;">Nintendo</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown-875">
+                    <a class="text-black text-primary dropdown-item " href="{% url 'bingo:detail1' %}">Splatoon3</a>
+                    <a class="text-black text-primary show dropdown-item " href="#">Open예정</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link text-black text-primary dropdown-toggle " href="{% url 'bingo:detail2' %}" target="_blank" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 16px;">Mobile</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown-215">
+                    <a class="text-black text-primary show dropdown-item " href="{% url 'bingo:detail2' %}">Evil Hunter</a>
+                    <a class="text-black text-primary dropdown-item " href="#">Open예정</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link text-black text-primary dropdown-toggle " href="#" target="_blank" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="font-size: 16px;">Community</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown-992">
+                    <a class="text-black text-primary show dropdown-item " href="#">TEAM</a>
+                    <a class="text-black text-primary show dropdown-item " href="#">CONTACTS</a>
+                    <a class="text-black text-primary show dropdown-item " href="#">FAQ</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link text-black text-primary show " href="{% url 'Board:list' %}" style="font-size: 16px;">게시판</a>
+                </li>
+                {% if user.is_anonymous %}
+                <li class="nav-item">
+                  <a class="nav-link link text-black text-primary show " href="{% url 'common:login' %}" style="font-size: 16px;">로그인</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link text-black text-primary show " href="{% url 'common:signup' %}" style="font-size: 16px;">회원가입</a>
+                </li>
+                {% else %} 
+                <li class="nav-item">
+                  <a class="nav-link link text-black text-primary show " href="{% url 'Board:board_create' %}" style="font-size: 16px;">게시판작성</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link text-black text-primary show " href="{% url 'common:logout' %}" style="font-size: 16px;" >로그아웃 [ {{user.username}} ]</a>
+                </li>
+                {% endif %}
+                
+              </ul>
+              
+              
+          </div>
+      </div>
+  </nav>
+</section>
+
+

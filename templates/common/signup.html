@@ -1,0 +1,41 @@
+{% extends "bingo_base.html" %}
+{% block content %}
+
+<section class="signup-block">
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <h1 class="text-center mt-2 mb-5">SIGNUP</h1>
+        <form method="POST" class="post-form" action="{% url 'common:signup' %}">
+          {% csrf_token %}
+          {% include "form_errors.html" %}
+          <div class="input-group mb-4">
+            <input type="text" class="form-control" name="username" id="username" placeholder="ID" 
+            value="{{ form.username.value|default_if_none:'' }}">
+          </div>
+          <div class="input-group mb-4">
+            <input type="password" class="form-control" name="password1" id="password1" placeholder="Password" 
+            value="{{ form.password1.value|default_if_none:'' }}">
+          </div>
+          <div class="input-group mb-4">
+            <input type="password" class="form-control" name="password2" id="password2" placeholder="Re-Entry Password" 
+            value="{{ form.password2.value|default_if_none:'' }}">
+          </div>
+          <div class="input-group mb-4">
+            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail Address" 
+            value="{{ form.email.value|default_if_none:'' }}">
+          </div>
+          <div class="d-grid gap-1">
+            <button type="submit" class="btn btn-outline-dark mt-2">회원가입</button>
+            <button type="reset" class="btn btn-outline-dark mt-2">취소</button>
+          </div>
+        </form>
+    </div>
+    <div class="col-lg-4"></div>
+ 
+  </div>
+</div>
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock %}

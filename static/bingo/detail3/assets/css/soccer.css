@@ -1,0 +1,632 @@
+@charset "UTF-8";
+/* CSS Document */
+@media all and (min-width: 760px) {
+
+}
+@media all and (min-width: 760px) and (max-width: 979px) {
+
+}
+@media screen and (max-width: 759px) {
+
+}
+/* ==================================================
+Soccer
+================================================== */
+/* game-top-hero */
+@media all and (min-width: 760px) {
+  .game-top-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: url(../img/game/soccer/bg_hero.png) no-repeat center top;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 100%;
+  }
+  .game-top-hero__model{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: calc(293 / 16 * 1em);
+    margin-left: calc(-260 / 16 * 1em);
+    z-index: 0;
+    display: block;
+    background: url(../img/game/soccer/bg_hero_model.png) no-repeat center top;
+    background-size: contain;
+    width: calc(1711 / 16 * 1em);
+    height: calc(1076 / 16 * 1em);
+  }
+  .game-section-head__ico{
+    width: calc(72 / 16 * 1em);
+  }
+  .game-section-head-sub__label {
+    width: calc(82 / 16 * 1em);
+  }
+  .game-top-hero-body::before {
+    height: 106%;
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-top-hero::before{
+    background-size: calc(2560 / 1600 * 100vw) auto;
+  }
+  .game-top-hero__model{
+    margin-bottom: calc(293 / 1600 * 100vw);
+    margin-left: calc(-260 / 1600 * 100vw);
+    width: calc(1711 / 1600 * 100vw);
+    height: calc(1076 / 1600 * 100vw);
+  }
+  .game-section-head__ico{
+    width: calc(72 / 1600 * 100vw);
+  }
+  .game-section-head-sub__label {
+    width: calc(82 / 1600 * 100vw);
+  }
+  .game-play-video-dot{
+    justify-content: space-between;
+  }
+  .game-play-video-dot__item:nth-of-type(1){
+    width: 24%!important;
+  }
+  .game-play-video-dot__item:nth-of-type(2){
+    width: 38%!important;
+  }
+  .game-play-video-dot__item:nth-of-type(3){
+    width: 38%!important;
+  }
+  .game-play-video-dot__item:nth-of-type(3) .game-play-video-dot__txt{
+    margin-left: calc(15 / 1600 * 100vw);
+    white-space: nowrap;
+  }
+  .game-play-video-dot__txt small{
+    display: inline-block;
+    transform: scale(0.7);
+    transform-origin: left;
+  }
+}
+@media screen and (max-width: 759px) {
+  .game-top-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: url(../img/game/soccer/bg_hero_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) auto;
+    width: 100%;
+    height: 100%;
+  }
+  .game-top-hero__model::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 33.33333%;
+    margin-bottom: calc(86 / 32 * 1em);
+    margin-left: calc(-234 / 32 * 1em);
+    z-index: 0;
+    display: block;
+    background: url(../img/game/soccer/bg_hero_model.png) no-repeat center top;
+    background-size: contain;
+    width: calc(1393 / 32 * 1em);
+    height: calc(867 / 32 * 1em);
+  }
+  .game-section-head__ico{
+    width: calc(109 / 32 * 1em);
+  }
+  .game-section-head-sub__label {
+    width: calc(109 / 32 * 1em);
+  }
+  .game-top-hero-body::before {
+    background: url(../img/game/soccer/bg_content_frame_top_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+  .game-top-hero-body::after {
+    background: url(../img/game/soccer/bg_content_frame_bottom_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+  .game-top-hero-body__inner{
+    padding-bottom: calc(100 / 32 * 1em);
+  }
+}
+
+/* game-main */
+@media screen and (min-width: 760px) {
+  .game-main::before{
+    content: "";
+    position: absolute;
+    /*top: calc(-405 / 16 * 1em);*/
+    top: calc(-190 / 16 * 1em);
+    display: block;
+    /*background: url(../img/game/badminton/bg_content_frame.png) no-repeat center top;*/
+    background: url(../img/game/badminton/bg_content_frame.png) no-repeat center -215px;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: calc(1240 / 2560 * 100%);
+  }
+  .game-main__inner {
+    padding-top:  calc(180 / 16 * 1em);
+  }
+}
+
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-main::before{
+    /*top: calc(-405 / 1600 * 100vw);*/
+    top: calc(-190 / 1600 * 100vw);
+    background-size: calc(2560 / 1600 * 100vw) auto;
+  }
+  .game-main__inner {
+    padding-top:  calc(180 / 1600 * 100vw);
+  }
+}
+
+/* game-point */
+@media screen and (min-width: 760px) {
+  /* point01 */
+  .-point01.game-point {
+    justify-content: flex-start;
+  }
+  .-point01 .game-point-img {
+    width:  calc(1002 / 16 * 1em);
+    margin-left: calc(-380 / 16 * 1em);
+  }
+  .-point01 .game-point-content {
+    /*right: calc(270 / 16 * 1em);*/
+    right: calc(200 / 16 * 1em);
+  }
+  .-point01 .game-point-content-head {
+    width:  calc(472 / 16 * 1em);
+    margin-top: calc(40 / 16 * 1em);
+  }
+  .-point01 .game-point-content::before {
+    content: "";
+    position: absolute;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(480 / 16 * 1em);
+    display: block;
+    background: url(../img/game/soccer/img_point01_chara.png) no-repeat center top;
+    background-size: 100% auto;
+    width: calc(491 / 16 * 1em);
+    height: calc(455 / 16 * 1em);
+    z-index: 1;
+  }
+
+  /* point02 */
+  .game-main-section:nth-of-type(2) {
+    margin-top: calc(112 / 16 * 1em);
+  }
+  .-point02.game-point {
+    justify-content: flex-end;
+  }
+  .-point02 .game-point-content {
+    left: 0;
+  }
+  .-point02 .game-point-img {
+    width: calc(1286 / 16 * 1em);
+    margin-right: calc(-385 / 16 * 1em);
+  }
+  .-point02 .game-point-content-head {
+    width: calc(641 / 16 * 1em);
+  }
+
+  /* point03 */
+  .game-main-section:nth-of-type(3) {
+    margin-top: calc(60 / 16 * 1em);
+    /*margin-bottom: calc(245 / 16 * 1em);*/
+    margin-bottom: 0;
+    padding-bottom: calc(245 / 16 * 1em);
+  }
+  .-point03.game-point {
+    justify-content: flex-start;
+  }
+  .-point03 .game-point-content {
+    width: calc(800 / 16 * 1em);
+    right: 0;
+  }
+  .-point03 .game-point-img {
+    width:  calc(949 / 16 * 1em);
+    margin-left: calc(-385 / 16 * 1em);
+  }
+  .-point03 .game-point-content-head {
+    margin-top: calc(10 / 16 * 1em);
+    width: calc(723 / 16 * 1em);
+  }
+  .game-point-content-txt__img {
+    margin-top: calc(20 / 16 * 1em);
+    width: calc(800 / 16 * 1em);
+    display: block;
+  }
+  .game-point-content-txt__img img {
+    box-shadow: 0.5px 0.866px 23.76px 0.24px rgba(0, 0, 0, 0.15);
+    border-radius: calc(18 / 16 * 1em);
+    max-width: 100%;
+    width: 100%;
+  }
+  .game-point-content-txt__txt-note {
+    padding-top: calc(30 / 16 * 1em);
+    font-size: calc(11 / 16 * 1em);
+  }
+
+}
+
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  /* point01 */
+  .-point01 .game-point-img {
+    width:  calc(1002 / 1600 * 100vw);
+    margin-left: calc(-380 / 1600 * 100vw);
+  }
+  .-point01 .game-point-content-head {
+    width:  calc(472 / 1600 * 100vw);
+    margin-top: calc(40 / 1600 * 100vw);
+  }
+  .-point01 .game-point-content::before {
+    top: 0;
+    left: calc(480 / 1600 * 100vw);
+    width: calc(491 / 1600 * 100vw);
+    height: calc(455 / 1600 * 100vw);
+  }
+  .-point01 .game-point-content {
+    right: calc(270 / 1600 * 100vw);
+  }
+  /* point02 */
+  .game-main-section:nth-of-type(2) {
+    margin-top: calc(112 / 1600 * 100vw);
+  }
+  .-point02 .game-point-img {
+    width:  calc(1286 / 1600 * 100vw);
+    margin-right: calc(-385 / 1600 * 100vw);
+  }
+  .-point02 .game-point-content-head {
+    /*width: calc(390 / 1600 * 100vw);*/
+    width:  calc(630 / 1600 * 100vw);
+    margin-top: calc(40 / 1600 * 100vw);
+  }
+  /* point03 */
+  .game-main-section:nth-of-type(3) {
+    margin-top: calc(60 / 1600 * 100vw);
+    /*margin-bottom: calc(245 / 1600 * 100vw);*/
+    margin-bottom: 0;
+    padding-bottom: calc(245 / 1600 * 100vw);
+  }
+  .-point03 .game-point-content {
+    width: calc(800 / 1600 * 100vw);
+  }
+  .-point03 .game-point-img {
+    width: calc(949 / 1600 * 100vw);
+    margin-left: calc(-385 / 1600 * 100vw);
+  }
+  .-point03 .game-point-content-head {
+    margin-top: calc(10 / 1600 * 100vw);
+    width: calc(723 / 1600 * 100vw);
+  }
+  .game-point-content-txt__img {
+    margin-top: calc(20 / 1600 * 100vw);
+    width: calc(800 / 1600 * 100vw);
+    display: block;
+  }
+  .game-point-content-txt__img img {
+    border-radius: calc(18 / 1600 * 100vw);
+  }
+}
+@media all and (max-width: 759px) {
+  /* point01 */
+  .-point01 .game-point-content-head {
+    /*width:  calc(398 / 32 * 1em);*/
+    width:  calc(659 / 32 * 1em);
+  }
+
+  /* point02 */
+  .-point02 .game-point-content-head {
+    /*width:  calc(494 / 32 * 1em);*/
+    width:  calc(659 / 32 * 1em);
+  }
+  .-point02 .game-point-content{
+    margin-bottom: calc(10 / 32 * 1em);
+  }
+
+  /* point03 */
+  .-point03 .game-point-content-head {
+    /*width:  calc(659 / 32 * 1em);*/
+    width:  calc(600 / 32 * 1em);
+  }
+  .game-point-content-txt__img {
+    width: calc(700 / 32 * 1em);
+    display: block;
+    margin: calc(45 / 32 * 1em) auto 0;
+  }
+  .game-point-content-txt__img img {
+    box-shadow: 0.5px 0.866px 23.76px 0.24px rgba(0, 0, 0, 0.15);
+    border-radius: calc(28 / 32 * 1em);
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+
+/* playstyle */
+@media all and (min-width: 760px) {
+  .game-playstyle{
+    position: relative;
+    margin-top: calc(15 / 16 * 1em);
+    padding-bottom: calc(80 / 16 * 1em);
+  }
+  .game-playstyle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background: url(../img/game/soccer/bg_bottom.png) no-repeat center bottom;
+    background-size: calc(2560 / 16 * 1em) auto;
+    width: 100%;
+    height: 100%;
+    /*padding-bottom: calc(280 / 2560 * 100%);*/
+    padding-bottom: calc(280 / 1560 * 100%);
+    z-index: -1;
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-playstyle{
+    margin-top: calc(15 / 1600 * 100vw);
+    padding-bottom: calc(80 / 1600 * 100vw);
+  }
+  .game-playstyle::after{
+    background-size: calc(2560 / 1600 * 100vw) auto;
+  }
+}
+@media all and (max-width: 759px) {
+  .game-playstyle{
+    margin-top: calc(120 / 32 * 1em);
+  }
+  .game-playstyle::before{
+    background: url(../img/game/soccer/bg_bottom_sp.png) no-repeat center top;
+    background-size: calc(750 / 32 * 1em) 100%;
+  }
+}
+
+/* joycon */
+@media all and (min-width: 760px) {
+  .game-joycon-img-list{
+    align-items: center;
+  }
+  .game-joycon-detail__inner{
+    width: calc(439 / 16 * 1em);
+  }
+  .game-joycon-detail-txt{
+    font-size: calc(16 / 16 * 1em);
+    letter-spacing: 0;
+  }
+  .page-bowling .game-joycon-detail__inner{
+    height: calc(106 / 16 * 1em);
+    padding-left: calc(130 / 16 * 1em);
+    padding-right: calc(40 / 16 * 1em);
+    background: url(../img/game/soccer/bg_joycon_bowling01.html) no-repeat center center;
+    background-size: 100% auto;
+  }
+  .game-joycon-desc__defin{
+    width: calc(475 / 16 * 1em);
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+  }
+  .game-joycon-img-title{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: calc(20 / 16 * 1em);
+    text-align: left;
+  }
+  .game-joycon-img + .game-joycon-img{
+    padding-top: calc(28 / 16 * 1em);
+  }
+
+  .game-joycon-img:nth-child(2) .game-joycon-img-title__label::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: calc(-280 / 32 * 1em) !important;
+    z-index: -1;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: #009ad0;
+  }
+  .game-joycon-img:nth-child(3) .game-joycon-img-title__label::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: calc(-150 / 32 * 1em) !important;
+    z-index: -1;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: #009ad0;
+  }
+
+
+  .game-joycon-img-title__label::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: calc(-110 / 16 * 1em);
+    z-index: -1;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: #009ad0;
+  }
+  .game-joycon-img-title__label{
+    display: block;
+    font-size: calc(20 / 16 * 1em);
+    color: #009ad0;
+    font-weight: 900;
+  }
+  .game-joycon-img:nth-of-type(1) .game-joycon-img__label{
+    width: calc(156 / 16 * 1em);
+  }
+  .game-joycon-img-list__item:nth-child(2) .game-joycon-img__label{
+    width: calc(156 / 16 * .9em);
+  }
+  .game-joycon-img:nth-of-type(2) .game-joycon-img__label{
+    /*width: calc(156 / 16 * .9em);*/
+    width: calc(156 / 16 * .7em) !important;
+    margin-top: calc(-20 / 16 * 1em);
+  }
+  .game-joycon-img:nth-of-type(2) .game-joycon-img-title::before{
+    right: calc(-100 / 16 * 1em);
+  }
+}
+@media screen and (min-width: 760px) {
+  .game-joycon-img__label2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-joycon-detail__inner{
+    width: calc(439 / 1600 * 100vw);
+  }
+  .game-joycon-detail-txt{
+    font-size: calc(16 / 1600 * 100vw);
+  }
+  .game-joycon-desc__defin{
+    width: calc(475 / 1600 * 100vw);
+  }
+  .game-joycon-img-title{
+    margin-bottom: calc(20 / 1600 * 100vw);
+  }
+  .game-joycon-img + .game-joycon-img{
+    padding-top: calc(28 / 1600 * 100vw);
+  }
+  .game-joycon-img-title__label{
+    font-size: calc(20 / 1600 * 100vw);
+  }
+  .game-joycon-img-title__label::before{
+    right: calc(-150 / 1600 * 100vw);
+  }
+  .game-joycon-img:nth-of-type(1) .game-joycon-img__label{
+    /*width: calc(156 / 1600 * 100vw);*/
+    width: calc(156 / 1600 * 90vw);
+  }
+  .game-joycon-img:nth-of-type(2) .game-joycon-img__label{
+    /*width: calc(120 / 1600 * 100vw);*/
+    width: calc(120 / 1600 * 90vw) !important;
+    margin-top: calc(-20 / 1600 * 100vw);
+  }
+  .game-joycon-img:nth-of-type(2) .game-joycon-img-title__label::before{
+    right: calc(-130 / 1600 * 100vw);
+  }
+}
+@media screen and (max-width: 759px) {
+  .game-joycon-desc__defin{
+    overflow: hidden;
+    margin: calc(35 / 32 * 1em) calc(12 / 32 * 1em) 0;
+  }
+  .game-joycon-img-title{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: calc(20 / 32 * 1em);
+    text-align: left;
+  }
+  .game-joycon-img + .game-joycon-img{
+    padding-top: calc(28 / 32 * 1em);
+  }
+  .game-joycon-img:nth-child(2) .game-joycon-img-list{
+    padding-bottom: 15vw;
+  }
+
+  .game-joycon-img:nth-child(2) .game-joycon-img-title__label::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: calc(-280 / 32 * 1em) !important;
+    z-index: -1;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: #009ad0;
+  }
+  .game-joycon-img:nth-child(3) .game-joycon-img-title__label::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: calc(-150 / 32 * 1em) !important;
+    z-index: -1;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: #009ad0;
+  }
+
+  .game-joycon-img-title__label::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    /*right: calc(-220 / 32 * 1em);*/
+    right: calc(-260 / 32 * 1em);
+    z-index: -1;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: #009ad0;
+  }
+  .game-joycon-img-title__label{
+    display: block;
+    font-size: calc(28 / 32 * 1em);
+    color: #009ad0;
+    font-weight: 900;
+  }
+  .game-joycon-img-list__item:nth-child(1){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: calc(390 / 32 * 1em);
+  }
+  .game-joycon-img:nth-child(2) .game-joycon-img-title__label::before{
+    right: calc(-200 / 32 * 1em);
+  }
+  .game-joycon-img:nth-of-type(1) .game-joycon-img__label{
+    /*width: calc(194 / 32 * 1em);*/
+    width: calc(218 / 32 * 1em);
+  }
+  .game-joycon-img:nth-of-type(2) .game-joycon-img__label{
+    /*width: calc(150 / 32 * 1em);*/
+    width: calc(180 / 32 * 1em) !important;
+    margin-top: calc(-20 / 32 * 1em);
+  }
+}
+
+/* game-point-movie */
+@media all and (min-width: 760px) {
+  .game-point-movie {
+    position: relative;
+    width: calc(900 / 16 * 1em);
+  }
+  .game-point-movie::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: calc(-40 / 16 * 1em);
+    left: calc(-160 / 16 * 1em);
+    background: url(../img/game/bowling/img_point01_line.png) center center;
+    background-size: contain;
+    width: calc(767 / 16 * 1em);
+    height: calc(28 / 16 * 1em);
+  }
+}
+@media all and (min-width: 760px) and (max-width: 1599px) {
+  .game-point-movie {
+    width: calc(900 / 1600 * 100vw);
+  }
+}
